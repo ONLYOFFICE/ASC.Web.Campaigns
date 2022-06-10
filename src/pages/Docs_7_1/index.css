@@ -107,7 +107,6 @@ div {
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
-    height: 48px;
   }
 
   .advent-announce-text {
@@ -117,14 +116,14 @@ div {
     height: auto;
     letter-spacing: 0.01em;
     line-height: 16px;
-    padding: 16px 0px;
+    padding: 20px 0px;
     white-space: normal;
     width: auto !important;
   }
 
   .advent-announce-text:after {
     background-image: url(./images/mob_right_docs_7_1.svg);
-    background-position-y: -12px;
+    background-position-y: -10px;
     right: -58px;
     width: 54px;
   }
@@ -134,7 +133,7 @@ div {
     background-position-y: 0;
     height: 28px;
     left: -64px;
-    top: 9px;
+    top: 13px;
     width: 51px;
   }
 
