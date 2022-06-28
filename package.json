@@ -4,6 +4,7 @@
   "version": "0.1.0",
   "dependencies": {
     "firebase-tools": "^10.2.0",
+    "fs-extra": "^10.1.0",
     "gatsby": "^4.4.0",
     "gatsby-plugin-gatsby-cloud": "^4.4.0",
     "gatsby-plugin-google-fonts": "^1.0.1",
@@ -38,7 +39,7 @@
     "shx": "^0.3.4"
   },
   "scripts": {
-    "build": "shx rm -rf public && gatsby build && shx cp -R src/campaigns/* public  && shx cp -R src/firebase/* public",
+    "build": "shx rm -rf public && gatsby build && node scripts/deploy-campaigns.js && shx cp -R src/firebase/* public",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "gatsby develop",

@@ -11,7 +11,7 @@
   },
   {
     "key": "zh-CN",
-    "shortKey": "zh",
+    "shortKey": "zh-CN",
     "iconName": "zh.svg"
   },
   {
@@ -23,11 +23,6 @@
     "key": "nl-NL",
     "shortKey": "nl",
     "iconName": "nl.svg"
-  },
-  {
-    "key": "en-GB",
-    "shortKey": "en-GB",
-    "iconName": "en-GB.svg"
   },
   {
     "key": "en-US",
@@ -50,11 +45,6 @@
     "iconName": "de.svg"
   },
   {
-    "key": "de-CH",
-    "shortKey": "de-CH",
-    "iconName": "de-CH.svg"
-  },
-  {
     "key": "el-GR",
     "shortKey": "el",
     "iconName": "el.svg"
@@ -73,6 +63,11 @@
     "key": "ko-KR",
     "shortKey": "ko",
     "iconName": "ko.svg"
+  },
+  {
+    "key": "lo-LO",
+    "shortKey": "lo",
+    "iconName": "lo.svg"
   },
   {
     "key": "lv-LV",
@@ -95,6 +90,11 @@
     "iconName": "pt.svg"
   },
   {
+    "key": "ro-RO",
+    "shortKey": "ro",
+    "iconName": "ro.svg"
+  },
+  {
     "key": "ru-RU",
     "shortKey": "ru",
     "iconName": "ru.svg"
@@ -108,11 +108,6 @@
     "key": "sl-SI",
     "shortKey": "sl",
     "iconName": "sl.svg"
-  },
-  {
-    "key": "es-MX",
-    "shortKey": "es-MX",
-    "iconName": "es-MX.svg"
   },
   {
     "key": "es-ES",
