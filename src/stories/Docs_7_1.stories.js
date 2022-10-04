@@ -29,6 +29,7 @@ export default {
           "nl",
           "pt",
           "zh",
+          "zh-CN",
         ],
       },
     },
