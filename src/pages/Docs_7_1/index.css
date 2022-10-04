@@ -44,10 +44,10 @@ div {
   font-size: 14px;
   font-weight: 600;
   height: 40px;
+  max-width: 754px;
   text-decoration: none !important;
   line-height: 20px;
   padding: 8px 0px;
-  width: 754px;
   z-index: 0;
 }
 
@@ -85,7 +85,7 @@ div {
 }
 
 .advent-announce.ru .advent-announce-text {
-  width: 828px;
+  max-width: 828px;
 }
 
 .advent-desktop-hide {
