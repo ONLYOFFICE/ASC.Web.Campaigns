@@ -43,7 +43,7 @@
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "gatsby develop",
-    "serve": "gatsby serve",
+    "serve": "gatsby serve --port 8000",
     "clean": "gatsby clean",
     "fb:login": "firebase login",
     "fb:logout": "firebase logout",
