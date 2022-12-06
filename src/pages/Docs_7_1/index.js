@@ -11,7 +11,7 @@ const IndexPage = () => {
     "https://www.onlyoffice.com/blog/2022/05/discover-onlyoffice-docs-v7-1/";
 
   return (
-    <>
+    <div className="docs-7-1">
       <div className={"advent-announce advent-mobile-hide " + language}>
         <a className="docs-7-1" target="_blank" href={LinkHrefDocs71} rel="noreferrer noopener">
           <div className="advent-announce-text">
@@ -38,7 +38,7 @@ const IndexPage = () => {
           </div>
         </a>
       </div>
-    </>
+    </div>
   );
 };
 

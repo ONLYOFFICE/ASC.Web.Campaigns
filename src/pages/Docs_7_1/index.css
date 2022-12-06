@@ -1,9 +1,9 @@
-div {
+.docs-7-1 div {
   font-family: "Open Sans", sans-serif, Arial;
   text-align: center;
 }
 
-.advent-announce {
+.docs-7-1 .advent-announce {
   background-color: #3A5FA6;
   height: 56px;
   left: 0;
@@ -15,7 +15,7 @@ div {
   z-index: 1001;
 }
 
-.advent-announce a {
+.docs-7-1 .advent-announce a {
   display: block;
   text-decoration: none;
   width: auto;
@@ -24,7 +24,7 @@ div {
   width: 100%;
 }
 
-.advent-announce-text {
+.docs-7-1 .advent-announce-text {
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
@@ -51,22 +51,22 @@ div {
   z-index: 0;
 }
 
-.advent-announce-text:after {
+.docs-7-1 .advent-announce-text:after {
   background-image: url(./images/desktop_right_docs_7_1.svg);
   background-position-y: -14px;
   right: -132px;
   width: 136px;
 }
 
-.advent-announce-text:before {
+.docs-7-1 .advent-announce-text:before {
   background-image: url(./images/desktop_left_docs_7_1.svg);
   background-position-y: 12px;
   left: -96px;
   width: 81px;
 }
 
-.advent-announce-text:before,
-.advent-announce-text:after {
+.docs-7-1 .advent-announce-text:before,
+.docs-7-1 .advent-announce-text:after {
   background-repeat: no-repeat;
   content: "";
   display: block;
@@ -76,24 +76,24 @@ div {
   z-index: -1;
 }
 
-.advent-announce-text b {
+.docs-7-1 .advent-announce-text b {
   font-weight: 700;
 }
 
-.advent-announce-text span {
+.docs-7-1 .advent-announce-text span {
   color: #FFB979;
 }
 
-.advent-announce.ru .advent-announce-text {
+.docs-7-1 .advent-announce.ru .advent-announce-text {
   max-width: 828px;
 }
 
-.advent-desktop-hide {
+.docs-7-1 .advent-desktop-hide {
   display: none;
 }
 
 @media screen and (max-width: 1023px) {
-  .advent-announce {
+  .docs-7-1 .advent-announce {
     -webkit-box-align: center;
     -webkit-align-items: center;
     -ms-flex-align: center;
@@ -109,7 +109,7 @@ div {
     justify-content: center;
   }
 
-  .advent-announce-text {
+  .docs-7-1 .advent-announce-text {
     display: inline-block;
     font-size: 12px;
     font-weight: bold;
@@ -121,14 +121,14 @@ div {
     width: auto !important;
   }
 
-  .advent-announce-text:after {
+  .docs-7-1 .advent-announce-text:after {
     background-image: url(./images/mob_right_docs_7_1.svg);
     background-position-y: -10px;
     right: -58px;
     width: 54px;
   }
 
-  .advent-announce-text:before {
+  .docs-7-1 .advent-announce-text:before {
     background-image: url(./images/mob_left_docs_7_1.svg);
     background-position-y: 0;
     height: 28px;
@@ -137,7 +137,7 @@ div {
     width: 51px;
   }
 
-  .advent-mobile-hide {
+  .docs-7-1 .advent-mobile-hide {
     display: none;
   }
 }
