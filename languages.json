@@ -40,6 +40,11 @@
     "iconName": "fr.svg"
   },
   {
+    "key": "hy-AM",
+    "shortKey": "hy",
+    "iconName": "hy.svg"
+  },
+  {
     "key": "de-DE",
     "shortKey": "de",
     "iconName": "de.svg"
