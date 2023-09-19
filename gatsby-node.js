@@ -9,7 +9,7 @@ exports.createPages = async ({ actions }) => {
 
   createRedirect({
     fromPath: `/`,
-    toPath: `/en/Docs_7_4`,
+    toPath: `/en/MoveToDocSpace`,
     exactPath: true,
     isPermanent: true,
     redirectInBrowser: true,

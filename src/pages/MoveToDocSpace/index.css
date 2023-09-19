@@ -1,0 +1,131 @@
+.move-to-docspace div {
+  font-family: "Open Sans", sans-serif, Arial;
+  text-align: center;
+}
+
+.move-to-docspace .advent-announce {
+  background-color: #F8F7BF;
+  height: 56px;
+  left: 0;
+  top: 0;
+  padding: 0;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  z-index: 1001;
+}
+
+.move-to-docspace .advent-announce a {
+  display: block;
+  text-decoration: none;
+  width: auto;
+  animation-duration: 0.5s;
+  position: absolute;
+  width: 100%;
+}
+
+.move-to-docspace .advent-announce.zh-CN .advent-announce-text {
+  display: flex;
+}
+
+.move-to-docspace .advent-announce-text {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #333333;
+  display: inline-block;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 400;
+  height: 40px;
+  letter-spacing: 0.01em;
+  line-height: normal;
+  margin: 0 auto;
+  max-width: 675px;
+  padding: 7px 0px 9px;
+  position: relative;
+  text-align: center;
+  text-decoration: none !important;
+  z-index: 0;
+}
+
+.move-to-docspace .advent-announce-text:after {
+  background-image: url(./images/move-to-docspace-right.svg);
+  right: -484px;
+  width: 474px;
+}
+
+.move-to-docspace .advent-announce-text:before {
+  background-image: url(./images/move-to-docspace-left.svg);
+  background-position-y: -6px;
+  left: -375px;
+  width: 365px;
+}
+
+.move-to-docspace .advent-announce-text:before,
+.move-to-docspace .advent-announce-text:after {
+  background-repeat: no-repeat;
+  content: "";
+  display: block;
+  height: 56px;
+  top: 0px;
+  position: absolute;
+  z-index: -1;
+}
+
+.move-to-docspace .advent-announce-text b {
+  font-weight: 700;
+}
+
+.move-to-docspace .advent-announce-text i {
+  font-weight: 700;
+}
+
+.advent-desktop-hide {
+  display: none;
+}
+
+@media screen and (max-width: 1023px) {
+  .move-to-docspace .advent-announce {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .move-to-docspace .advent-announce-text {
+    display: inline-block;
+    height: auto;
+    max-width: 154px;
+    padding: 9px 0px;
+    white-space: normal;
+    width: auto !important;
+  }
+
+  .move-to-docspace .advent-announce-text:before {
+    background-position-x: right;
+    left: -56px;
+    width: 44px;
+  }
+
+  .move-to-docspace .advent-announce-text:after {
+    right: -34px;
+    width: 22px;
+  }
+
+  .move-to-docspace .advent-mobile-hide {
+    display: none;
+  }
+}
