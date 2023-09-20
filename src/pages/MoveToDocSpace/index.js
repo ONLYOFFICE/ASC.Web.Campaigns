@@ -22,7 +22,7 @@ const IndexPage = () => {
           </div>
         </a>
       </div>
-      <div className="advent-announce advent-desktop-hide">
+      <div className={"advent-announce advent-desktop-hide " + language}>
         <a target="_blank" href={LinkHrefDocSpace} rel="noreferrer noopener">
           <div className="advent-announce-text">
               <Trans i18nKey="Banner_MoveToDocSpace_TextMob">
