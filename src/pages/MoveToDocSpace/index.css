@@ -89,7 +89,7 @@
   display: none;
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 972px) {
   .move-to-docspace .advent-announce {
     -webkit-box-align: center;
     -webkit-align-items: center;
