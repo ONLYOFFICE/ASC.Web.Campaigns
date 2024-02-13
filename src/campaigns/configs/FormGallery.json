@@ -16,5 +16,6 @@
     "fontWeight": "600",
     "url": "https://onlyoffice.com",
     "type": "select-form"
-  }
+  },
+  "hideFor": ["user"]
 }

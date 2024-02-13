@@ -17,5 +17,6 @@
     "fontWeight": "700",
     "url": "https://onlyoffice.com",
     "type": "open-url"
-  }
+  },
+  "hideFor": ["owner", "admin"]
 }
