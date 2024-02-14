@@ -1,0 +1,21 @@
+{
+  "borderColor": "#388BDE",
+  "title": {
+    "color": "#388BDE",
+    "fontSize": "12px",
+    "fontWeight": "600"
+  },
+  "body": {
+    "fontSize": "12px",
+    "fontWeight": "600"
+  },
+  "action": {
+    "isButton": false,
+    "color": "#388BDE",
+    "fontSize": "12px",
+    "fontWeight": "600",
+    "url": "https://onlyoffice.com",
+    "type": "select-form"
+  },
+  "hideFor": ["user"]
+}
