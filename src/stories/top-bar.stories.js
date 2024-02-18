@@ -12,6 +12,12 @@ export default {
     layout: "fullscreen",
   },
   argTypes: {
+    name: {
+      control: {
+        type: "select",
+      },
+      options: ["Docs_7_1", "DocSpace", "MoveToDocSpace"],
+    },
     theme: {
       control: {
         type: "select",

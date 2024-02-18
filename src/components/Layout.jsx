@@ -38,7 +38,7 @@ export const Layout = ({ theme, name, origin, language }) => {
 
   return (
     <ThemeProvider theme={themes[theme || "light"]}>
-      <div style={{ position: "relative" }}>
+      <div style={{ position: "relative", height: "60px" }}>
         <StyledIframe scrolling="no" className="iframe" src={url} />
         <StyledAction>
           <img style={{ width: "16px" }} src={cross} />
