@@ -67,3 +67,5 @@ node_modules/
 
 # Publish directory
 public/
+.yarn/
+.DS_Store
