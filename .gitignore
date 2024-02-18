@@ -69,3 +69,5 @@ node_modules/
 public/
 .yarn/
 .DS_Store
+# Gatsby cache
+.cache/

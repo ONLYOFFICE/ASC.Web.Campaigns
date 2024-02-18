@@ -1,8 +1,12 @@
 import React from "react";
 import { Layout } from "../components/Layout";
 
+import lngs from "../../languages.json";
+
+const options = lngs.map((t) => t.shortKey);
+
 export default {
-  title: "Example/Docs_7_1",
+  title: "Example/TopBar",
   component: Layout,
   parameters: {
     layout: "fullscreen",
@@ -11,26 +15,14 @@ export default {
     theme: {
       control: {
         type: "select",
-        options: ["light", "dark"],
       },
+      options: ["light", "dark"],
     },
     language: {
       control: {
         type: "select",
-        options: [
-          "en",
-          "ru",
-          "cs",
-          "de",
-          "es",
-          "fr",
-          "it",
-          "ja",
-          "nl",
-          "pt",
-          "zh",
-        ],
       },
+      options,
     },
   },
 };
