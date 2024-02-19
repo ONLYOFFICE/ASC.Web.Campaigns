@@ -17,5 +17,6 @@ const config = {
   docs: {
     autodocs: "tag",
   },
+  staticDirs: ["../src/campaigns"],
 };
 export default config;
