@@ -7,7 +7,7 @@ import { ThemeProvider } from "styled-components";
 import { StyledIframe, StyledAction } from "./section/styled-section";
 import cross from "./section/images/cross.react.svg";
 
-export const Layout = ({ theme, name, origin, language }) => {
+export const Layout = ({ theme, name, origin, language, campaignName }) => {
   const [visible, setVisible] = useState(true);
 
   const themes = {
@@ -38,15 +38,19 @@ export const Layout = ({ theme, name, origin, language }) => {
 
   return (
     <ThemeProvider theme={themes[theme || "light"]}>
-      <div style={{ position: "relative", height: "60px" }}>
-        <StyledIframe scrolling="no" className="iframe" src={url} />
-        <StyledAction>
-          <img style={{ width: "16px" }} src={cross} />
-        </StyledAction>
-      </div>
+      {origin && (
+        <div style={{ position: "relative", height: "60px" }}>
+          <StyledIframe scrolling="no" className="iframe" src={url} />
+          <StyledAction>
+            <img style={{ width: "16px" }} src={cross} />
+          </StyledAction>
+        </div>
+      )}
       <div className="container" style={{ display: "flex" }}>
-        {visible && window.innerWidth > 1025 && <Article />}
-        <Section name={name} origin={origin} lang={language} />
+        {visible && window.innerWidth > 1025 && (
+          <Article campaignName={campaignName} language={language} />
+        )}
+        <Section />
       </div>
     </ThemeProvider>
   );
