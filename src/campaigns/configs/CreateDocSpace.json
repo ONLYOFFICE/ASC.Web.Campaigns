@@ -15,7 +15,6 @@
     "backgroundColor": "#388BDE",
     "fontSize": "12px",
     "fontWeight": "700",
-    "url": "https://onlyoffice.com",
     "type": "open-url"
   },
   "hideFor": ["owner", "admin"]
