@@ -1,36 +1,28 @@
 import React from "react";
 import { Layout } from "../components/Layout";
 
+import lngs from "../../languages.json";
+
+const options = lngs.map((t) => t.shortKey);
+
 export default {
-  title: "Example/Docs_7_1",
+  title: "Example/ArticleBanner",
   component: Layout,
   parameters: {
     layout: "fullscreen",
   },
   argTypes: {
-    theme: {
+    campaignName: {
       control: {
         type: "select",
-        options: ["light", "dark"],
       },
+      options: ["CreateDocSpace", "FormGallery"],
     },
     language: {
       control: {
         type: "select",
-        options: [
-          "en",
-          "ru",
-          "cs",
-          "de",
-          "es",
-          "fr",
-          "it",
-          "ja",
-          "nl",
-          "pt",
-          "zh",
-        ],
       },
+      options,
     },
   },
 };
@@ -40,8 +32,6 @@ const Template = (args) => <Layout {...args} />;
 export const Default = Template.bind({});
 
 Default.args = {
-  origin: "http://localhost:8000", // use your source
-  name: "Docs_7_1",
+  campaignName: "CreateDocSpace",
   language: "en",
-  theme: "light",
 };
