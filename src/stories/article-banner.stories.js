@@ -20,6 +20,7 @@ export default {
         "CreateDocSpace",
         "OnlyofficeForDevelopers",
         "OnlyofficeForPlatform",
+        "BookTraining",
         "FormGallery",
       ],
     },
