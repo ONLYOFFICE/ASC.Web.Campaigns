@@ -16,7 +16,7 @@ export default {
       control: {
         type: "select",
       },
-      options: ["CreateDocSpace", "FormGallery"],
+      options: ["CreateDocSpace", "FormGallery", "OnlyofficeForDevelopers"],
     },
     language: {
       control: {
