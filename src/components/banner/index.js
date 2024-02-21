@@ -5,7 +5,9 @@ import {
   BannerButton,
   StyledText,
   StyledLink,
+  StyledAction,
 } from "./styled-banner";
+import cross from "../../images/cross.react.svg";
 
 const Banner = (props) => {
   const { campaignImage, campaignTranslate, campaignConfig } = props;
@@ -34,6 +36,7 @@ const Banner = (props) => {
       <BannerContent>
         {hasTitle && (
           <StyledText
+            className="header"
             color={title?.color}
             fontSize={title?.fontSize}
             fontWeight={title?.fontWeight}
@@ -41,24 +44,26 @@ const Banner = (props) => {
             {Header}
           </StyledText>
         )}
-        {hasBodyText && (
-          <StyledText
-            color={body?.color}
-            fontSize={body?.fontSize}
-            fontWeight={body?.fontWeight}
-          >
-            {SubHeader}
-          </StyledText>
-        )}
-        {hasText && (
-          <StyledText
-            color={text?.color}
-            fontSize={text?.fontSize}
-            fontWeight={text?.fontWeight}
-          >
-            {Text}
-          </StyledText>
-        )}
+        <div>
+          {hasBodyText && (
+            <StyledText
+              color={body?.color}
+              fontSize={body?.fontSize}
+              fontWeight={body?.fontWeight}
+            >
+              {SubHeader}
+            </StyledText>
+          )}
+          {hasText && (
+            <StyledText
+              color={text?.color}
+              fontSize={text?.fontSize}
+              fontWeight={text?.fontWeight}
+            >
+              {Text}
+            </StyledText>
+          )}
+        </div>
         {isButton ? (
           <BannerButton
             buttonTextColor={action?.color}
@@ -78,6 +83,9 @@ const Banner = (props) => {
           </StyledLink>
         )}
       </BannerContent>
+      <StyledAction>
+        <img className="cross" src={cross} />
+      </StyledAction>
     </BannerWrapper>
   );
 };

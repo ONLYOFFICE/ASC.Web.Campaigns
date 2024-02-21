@@ -21,10 +21,14 @@ const BannerWrapper = styled.div`
 `;
 
 const BannerContent = styled.div`
-  padding: 18px 14px;
+  padding: 16px 14px;
   display: flex;
   flex-direction: column;
   gap: 8px;
+
+  .header {
+    max-width: 170px;
+  }
 `;
 
 const BannerButton = styled.button`
@@ -59,4 +63,21 @@ const StyledLink = styled.a`
   }
 `;
 
-export { BannerWrapper, BannerContent, BannerButton, StyledText, StyledLink };
+const StyledAction = styled.div`
+  .cross {
+    position: absolute;
+    height: 12px;
+    width: 12px;
+    right: 14px;
+    top: 18px;
+  }
+`;
+
+export {
+  BannerWrapper,
+  BannerContent,
+  BannerButton,
+  StyledText,
+  StyledLink,
+  StyledAction,
+};
