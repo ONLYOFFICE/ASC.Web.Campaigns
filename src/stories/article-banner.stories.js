@@ -16,7 +16,13 @@ export default {
       control: {
         type: "select",
       },
-      options: ["CreateDocSpace", "FormGallery"],
+      options: [
+        "CreateDocSpace",
+        "OnlyofficeForDevelopers",
+        "OnlyofficeForPlatform",
+        "BookTraining",
+        "FormGallery",
+      ],
     },
     language: {
       control: {
