@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 const BannerWrapper = styled.div`
+  overflow: hidden;
   position: relative;
   min-height: 140px;
   max-height: 140px;
@@ -8,26 +9,17 @@ const BannerWrapper = styled.div`
   border: 1px solid ${(props) => props.borderColor};
   background-image: url(${(props) => props.background});
   background-size: 100%;
-
-  .close-icon {
-    position: absolute;
-    right: 14px;
-    top: 18px;
-
-    path {
-      fill: "#A3A9AE";
-    }
-  }
 `;
 
 const BannerContent = styled.div`
+  overflow: hidden;
   padding: 16px 14px;
   display: flex;
   flex-direction: column;
   gap: 8px;
 
   .header {
-    max-width: 170px;
+    max-width: 167px;
   }
 `;
 

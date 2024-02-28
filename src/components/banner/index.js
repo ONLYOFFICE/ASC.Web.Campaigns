@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {
   BannerWrapper,
   BannerContent,
@@ -19,6 +19,8 @@ const Banner = (props) => {
   const hasText = !!Text;
   const isButton = action?.isButton;
 
+  const [fontSize, setFontSize] = useState(parseInt(body?.fontSize) || 13);
+
   const onAction = (type, url) => {
     switch (type) {
       case "select-form":
@@ -31,8 +33,24 @@ const Banner = (props) => {
     }
   };
 
+  useEffect(() => {
+    setFontSize(parseInt(body?.fontSize) || 13);
+  }, [campaignTranslate]);
+
+  useEffect(() => {
+    const el = document.getElementById("banner");
+    const isOverflow = el.scrollHeight > el.offsetHeight;
+    if (isOverflow) {
+      setFontSize((prevFontSize) => prevFontSize - 1);
+    }
+  }, [fontSize, campaignTranslate, campaignImage]);
+
   return (
-    <BannerWrapper background={campaignImage} borderColor={borderColor}>
+    <BannerWrapper
+      id="banner"
+      background={campaignImage}
+      borderColor={borderColor}
+    >
       <BannerContent>
         {hasTitle && (
           <StyledText
@@ -48,7 +66,7 @@ const Banner = (props) => {
           {hasBodyText && (
             <StyledText
               color={body?.color}
-              fontSize={body?.fontSize}
+              fontSize={`${fontSize}px`}
               fontWeight={body?.fontWeight}
             >
               {SubHeader}
