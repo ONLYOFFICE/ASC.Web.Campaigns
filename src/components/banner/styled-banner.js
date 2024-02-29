@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 const BannerWrapper = styled.div`
+  overflow: hidden;
   position: relative;
   min-height: 140px;
   max-height: 140px;
@@ -8,23 +9,18 @@ const BannerWrapper = styled.div`
   border: 1px solid ${(props) => props.borderColor};
   background-image: url(${(props) => props.background});
   background-size: 100%;
-
-  .close-icon {
-    position: absolute;
-    right: 14px;
-    top: 18px;
-
-    path {
-      fill: "#A3A9AE";
-    }
-  }
 `;
 
 const BannerContent = styled.div`
-  padding: 18px 14px;
+  overflow: hidden;
+  padding: 16px 14px;
   display: flex;
   flex-direction: column;
   gap: 8px;
+
+  .header {
+    max-width: 167px;
+  }
 `;
 
 const BannerButton = styled.button`
@@ -59,4 +55,21 @@ const StyledLink = styled.a`
   }
 `;
 
-export { BannerWrapper, BannerContent, BannerButton, StyledText, StyledLink };
+const StyledAction = styled.div`
+  .cross {
+    position: absolute;
+    height: 12px;
+    width: 12px;
+    right: 14px;
+    top: 18px;
+  }
+`;
+
+export {
+  BannerWrapper,
+  BannerContent,
+  BannerButton,
+  StyledText,
+  StyledLink,
+  StyledAction,
+};

@@ -1,11 +1,13 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {
   BannerWrapper,
   BannerContent,
   BannerButton,
   StyledText,
   StyledLink,
+  StyledAction,
 } from "./styled-banner";
+import cross from "../../images/cross.react.svg";
 
 const Banner = (props) => {
   const { campaignImage, campaignTranslate, campaignConfig } = props;
@@ -16,6 +18,8 @@ const Banner = (props) => {
   const hasBodyText = !!SubHeader;
   const hasText = !!Text;
   const isButton = action?.isButton;
+
+  const [fontSize, setFontSize] = useState(parseInt(body?.fontSize) || 13);
 
   const onAction = (type, url) => {
     switch (type) {
@@ -29,11 +33,28 @@ const Banner = (props) => {
     }
   };
 
+  useEffect(() => {
+    setFontSize(parseInt(body?.fontSize) || 13);
+  }, [campaignTranslate]);
+
+  useEffect(() => {
+    const el = document.getElementById("banner");
+    const isOverflow = el.scrollHeight > el.offsetHeight;
+    if (isOverflow) {
+      setFontSize((prevFontSize) => prevFontSize - 1);
+    }
+  }, [fontSize, campaignTranslate, campaignImage]);
+
   return (
-    <BannerWrapper background={campaignImage} borderColor={borderColor}>
+    <BannerWrapper
+      id="banner"
+      background={campaignImage}
+      borderColor={borderColor}
+    >
       <BannerContent>
         {hasTitle && (
           <StyledText
+            className="header"
             color={title?.color}
             fontSize={title?.fontSize}
             fontWeight={title?.fontWeight}
@@ -41,24 +62,26 @@ const Banner = (props) => {
             {Header}
           </StyledText>
         )}
-        {hasBodyText && (
-          <StyledText
-            color={body?.color}
-            fontSize={body?.fontSize}
-            fontWeight={body?.fontWeight}
-          >
-            {SubHeader}
-          </StyledText>
-        )}
-        {hasText && (
-          <StyledText
-            color={text?.color}
-            fontSize={text?.fontSize}
-            fontWeight={text?.fontWeight}
-          >
-            {Text}
-          </StyledText>
-        )}
+        <div>
+          {hasBodyText && (
+            <StyledText
+              color={body?.color}
+              fontSize={`${fontSize}px`}
+              fontWeight={body?.fontWeight}
+            >
+              {SubHeader}
+            </StyledText>
+          )}
+          {hasText && (
+            <StyledText
+              color={text?.color}
+              fontSize={text?.fontSize}
+              fontWeight={text?.fontWeight}
+            >
+              {Text}
+            </StyledText>
+          )}
+        </div>
         {isButton ? (
           <BannerButton
             buttonTextColor={action?.color}
@@ -78,6 +101,9 @@ const Banner = (props) => {
           </StyledLink>
         )}
       </BannerContent>
+      <StyledAction>
+        <img className="cross" src={cross} />
+      </StyledAction>
     </BannerWrapper>
   );
 };

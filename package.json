@@ -1,7 +1,7 @@
 {
   "name": "asc-web-campaigns",
   "private": true,
-  "version": "1.0.3",
+  "version": "1.0.4",
   "dependencies": {
     "firebase-tools": "^10.9.2",
     "fs-extra": "^10.1.0",

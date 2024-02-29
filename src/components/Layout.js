@@ -5,7 +5,7 @@ import { Section } from "./section/Section";
 import { Dark, Base } from "./theme/index";
 import { ThemeProvider } from "styled-components";
 import { StyledIframe, StyledAction } from "./section/styled-section";
-import cross from "./section/images/cross.react.svg";
+import cross from "../images/cross.react.svg";
 
 export const Layout = ({ theme, name, origin, language, campaignName }) => {
   const [visible, setVisible] = useState(true);
