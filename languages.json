@@ -1,5 +1,10 @@
 [
   {
+    "key": "ar-SA",
+    "shortKey": "ar-SA",
+    "iconName": "en.svg"
+  },
+  {
     "key": "az-Latn-AZ",
     "shortKey": "az",
     "iconName": "az.svg"
@@ -60,8 +65,13 @@
     "iconName": "it.svg"
   },
   {
-    "key": "ja-JP",
+    "key": "ja",
     "shortKey": "ja",
+    "iconName": "ja.svg"
+  },
+  {
+    "key": "ja-JP",
+    "shortKey": "ja-JP",
     "iconName": "ja.svg"
   },
   {
