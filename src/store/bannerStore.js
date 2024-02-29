@@ -7,14 +7,19 @@ export const useBannerStore = create((set) => ({
 
   fetch: async (campaignName, language) => {
     const imageRes = `/images/campaign.${campaignName.toLowerCase()}.svg`;
-    const translateRes = await fetch(
+    let translateRes = await fetch(
       `/locales/${language}/Campaign${campaignName}.json`
     );
+
+    if (!translateRes.ok) {
+      translateRes = await fetch(`/locales/en/Campaign${campaignName}.json`);
+    }
+
     const configRes = await fetch(`/configs/Campaign${campaignName}.json`);
     set({
       campaignImage: imageRes,
-      campaignTranslate: await translateRes.json(),
-      campaignConfig: await configRes.json(),
+      campaignTranslate: translateRes.ok ? await translateRes.json() : {},
+      campaignConfig: configRes.ok ? await configRes.json() : {},
     });
   },
 }));
