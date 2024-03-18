@@ -1,6 +1,6 @@
 {
-    "Header": "ONLYOFFICE for developers",
-    "SubHeader": "The best online office experience within your app, under your brand.",
-    "ButtonLabel": "Learn more",
-    "Link": "https://www.onlyoffice.com/for-developers.aspx"
+  "ButtonLabel": "Learn more",
+  "Header": "ONLYOFFICE for developers",
+  "Link": "https://www.onlyoffice.com/for-developers.aspx",
+  "SubHeader": "The best online office experience within your app, under your brand."
 }
