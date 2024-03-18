@@ -42,6 +42,7 @@ const SectionWrapper = styled.div`
 `;
 
 const SectionHeader = styled.h2`
+    margin-top: 8px;
     color: ${props => props.theme.color};
 `;
 

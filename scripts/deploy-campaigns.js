@@ -9,12 +9,15 @@ const imagesDir = path.join(campaignsDir, "images");
 const pubImagesDir = path.join(publicDir, "images");
 const localesDir = path.join(campaignsDir, "locales");
 const pubLocalesDir = path.join(publicDir, "locales");
+const configsDir = path.join(campaignsDir, "configs");
+const pubConfigsDir = path.join(publicDir, "configs");
 
 if (!fs.existsSync(publicDir)) {
   fs.mkdirSync(publicDir);
 }
 
 fse.copySync(imagesDir, pubImagesDir);
+fse.copySync(configsDir, pubConfigsDir);
 
 var existLngList = fs
   .readdirSync(localesDir, { withFileTypes: true })

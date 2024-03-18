@@ -67,4 +67,7 @@ node_modules/
 
 # Publish directory
 public/
-.cache
+.yarn/
+.DS_Store
+# Gatsby cache
+.cache/

@@ -1,0 +1,20 @@
+{
+  "borderColor": "#FF6F3D",
+  "title": {
+    "color": "#FF6F3D",
+    "fontSize": "12px",
+    "fontWeight": "600"
+  },
+  "body": {
+    "fontSize": "13px",
+    "fontWeight": "600"
+  },
+  "action": {
+    "isButton": false,
+    "color": "#FF6F3D",
+    "fontSize": "12px",
+    "fontWeight": "600",
+    "type": "open-url"
+  },
+  "hideFor": []
+}

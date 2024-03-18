@@ -4,24 +4,34 @@ import lngs from "../../languages.json";
 
 const options = lngs.map((t) => t.shortKey);
 
+import lngs from "../../languages.json";
+
+const options = lngs.map((t) => t.shortKey);
+
 export default {
-  title: "Example/Docs_7_1",
+  title: "Example/TopBar",
   component: Layout,
   parameters: {
     layout: "fullscreen",
   },
   argTypes: {
+    name: {
+      control: {
+        type: "select",
+      },
+      options: ["Docs_7_1", "DocSpace", "MoveToDocSpace"],
+    },
     theme: {
       control: {
         type: "select",
-        options: ["light", "dark"],
       },
+      options: ["light", "dark"],
     },
     language: {
       control: {
         type: "select",
-        options,
       },
+      options,
     },
   },
 };

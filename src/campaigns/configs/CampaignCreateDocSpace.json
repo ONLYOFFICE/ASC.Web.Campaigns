@@ -1,0 +1,21 @@
+{
+  "borderColor": "#388BDE",
+  "title": {
+    "color": "#4781D1",
+    "fontSize": "12px",
+    "fontWeight": "600"
+  },
+  "body": {
+    "fontSize": "13px",
+    "fontWeight": "600"
+  },
+  "action": {
+    "isButton": true,
+    "color": "#fff",
+    "backgroundColor": "#388BDE",
+    "fontSize": "12px",
+    "fontWeight": "700",
+    "type": "open-url"
+  },
+  "hideFor": ["owner", "admin"]
+}

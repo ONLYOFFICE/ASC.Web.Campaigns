@@ -4,7 +4,7 @@
 }
 
 .docs-7-1 .advent-announce {
-  background-color: #3A5FA6;
+  background-color: #3a5fa6;
   height: 56px;
   left: 0;
   top: 0;
@@ -29,7 +29,7 @@
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #FFFFFF;
+  color: #ffffff;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -81,7 +81,7 @@
 }
 
 .docs-7-1 .advent-announce-text span {
-  color: #FFB979;
+  color: #ffb979;
 }
 
 .docs-7-1 .advent-announce.ru .advent-announce-text {
@@ -98,7 +98,7 @@
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
-    background-color: #3A5FA6;
+    background-color: #3a5fa6;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
