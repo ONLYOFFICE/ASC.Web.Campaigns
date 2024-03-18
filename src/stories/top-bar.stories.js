@@ -1,5 +1,8 @@
 import React from "react";
 import { Layout } from "../components/Layout";
+import lngs from "../../languages.json";
+
+const options = lngs.map((t) => t.shortKey);
 
 import lngs from "../../languages.json";
 

@@ -43,7 +43,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-google-fonts",
       options: {
-        fonts: ["Open Sans:600,700"],
+        fonts: ["Open Sans:400,600,700"],
       },
     },
     'gatsby-plugin-no-javascript'

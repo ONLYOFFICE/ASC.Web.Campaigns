@@ -1,0 +1,162 @@
+.docs-7-2 div {
+  font-family: "Open Sans", sans-serif, Arial;
+  text-align: center;
+}
+
+.docs-7-2 .advent-announce {
+  background-color: #4f698e;
+  height: 56px;
+  left: 0;
+  top: 0;
+  padding: 0;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  z-index: 1001;
+}
+
+.docs-7-2 .advent-announce a {
+  display: block;
+  text-decoration: none;
+  width: auto;
+  animation-duration: 0.5s;
+  position: absolute;
+  width: 100%;
+}
+
+.docs-7-2 .advent-announce.cs .advent-announce-text {
+  max-width: 872px;
+}
+
+.docs-7-2 .advent-announce.de .advent-announce-text {
+  max-width: 861px;
+}
+
+.docs-7-2 .advent-announce.es .advent-announce-text {
+  max-width: 851px;
+}
+
+.docs-7-2 .advent-announce.fr .advent-announce-text {
+  max-width: 924px;
+}
+
+.docs-7-2 .advent-announce.it .advent-announce-text {
+  max-width: 856px;
+}
+
+.docs-7-2 .advent-announce.ja .advent-announce-text {
+  max-width: 764px;
+}
+
+.docs-7-2 .advent-announce.nl .advent-announce-text {
+  max-width: 659px;
+}
+
+.docs-7-2 .advent-announce.pt .advent-announce-text {
+  max-width: 867px;
+}
+
+.docs-7-2 .advent-announce.ru .advent-announce-text {
+  max-width: 978px;
+}
+
+.docs-7-2 .advent-announce.zh .advent-announce-text {
+  max-width: 558px;
+}
+
+.docs-7-2 .advent-announce-text {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #fff;
+  display: inline-block;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: 400;
+  height: 40px;
+  line-height: 20px;
+  margin: 0 auto;
+  max-width: 711px;
+  padding: 7px 0px 9px;
+  position: relative;
+  text-align: center;
+  text-decoration: none !important;
+  z-index: 0;
+}
+
+.docs-7-2 .advent-announce-text:after {
+  background-image: url(./images/arrow_right_white.svg), url(./images/banner_discover_docs_v7_2_right.svg);
+  background-position-x: 0,142px;
+  background-position-y: 21px,12px;
+  right: -560px;
+  width: 552px;
+}
+
+.docs-7-2 .advent-announce-text:before {
+  background-image: url(./images/banner_discover_docs_v7_2_left.svg), url(./images/7_2.svg);
+  background-position-x: 126px,right;
+  background-position-y: 12px,-12px;
+  left: -501px;
+  width: 475px;
+}
+
+.docs-7-2 .advent-announce-text:before,
+.docs-7-2 .advent-announce-text:after {
+  background-repeat: no-repeat;
+  content: "";
+  display: block;
+  height: 56px;
+  top: 0px;
+  position: absolute;
+  z-index: -1;
+}
+
+.docs-7-2 .advent-announce-text b {
+  font-weight: 700;
+}
+
+.docs-7-2 .advent-announce-text span {
+  color: #FFB979;
+}
+
+.advent-desktop-hide {
+  display: none;
+}
+
+@media screen and (max-width: 1023px) {
+  .docs-7-2 .advent-announce {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #4f698e;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .docs-7-2 .advent-announce-text {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+    height: auto;
+    letter-spacing: 0.01em;
+    line-height: 16px;
+    padding: 20px 0px;
+    white-space: normal;
+    width: auto !important;
+  }
+
+  .docs-7-2 .advent-mobile-hide {
+    display: none;
+  }
+}

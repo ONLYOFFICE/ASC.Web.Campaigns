@@ -1,5 +1,10 @@
 [
   {
+    "key": "ar-SA",
+    "shortKey": "ar-SA",
+    "iconName": "en.svg"
+  },
+  {
     "key": "az-Latn-AZ",
     "shortKey": "az",
     "iconName": "az.svg"
@@ -40,6 +45,11 @@
     "iconName": "fr.svg"
   },
   {
+    "key": "hy-AM",
+    "shortKey": "hy-AM",
+    "iconName": "hy.svg"
+  },
+  {
     "key": "de-DE",
     "shortKey": "de",
     "iconName": "de.svg"
@@ -55,8 +65,13 @@
     "iconName": "it.svg"
   },
   {
-    "key": "ja-JP",
+    "key": "ja",
     "shortKey": "ja",
+    "iconName": "ja.svg"
+  },
+  {
+    "key": "ja-JP",
+    "shortKey": "ja-JP",
     "iconName": "ja.svg"
   },
   {

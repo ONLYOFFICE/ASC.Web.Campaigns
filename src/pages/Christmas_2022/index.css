@@ -1,0 +1,142 @@
+.xmas-2022 div {
+  font-family: "Open Sans", sans-serif, Arial;
+  text-align: center;
+}
+
+.xmas-2022 .advent-announce {
+  background-image: linear-gradient(90deg,#466a93 0%,#799fcb 51.04%,#466a93 100%);
+  height: 56px;
+  left: 0;
+  top: 0;
+  padding: 0;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  z-index: 1001;
+}
+
+.xmas-2022 .advent-announce a {
+  display: block;
+  text-decoration: none;
+  width: auto;
+  animation-duration: 0.5s;
+  position: absolute;
+  width: 100%;
+}
+
+.xmas-2022 .advent-announce.zh .advent-announce-text,
+.xmas-2022 .advent-announce.zh-CN .advent-announce-text {
+  max-width: 562px;
+}
+
+.xmas-2022 .advent-announce-text {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #fff;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: 400;
+  height: 42px;
+  letter-spacing: 0.01em;
+  line-height: 20px;
+  margin: 0 auto;
+  max-width: 560px;
+  padding: 7px 0px 9px;
+  position: relative;
+  text-align: center;
+  text-decoration: none !important;
+  z-index: 0;
+}
+
+.xmas-2022 .advent-announce-text:after {
+  background-image: url(./images/desk-right.svg);
+  right: -364px;
+  width: 356px;
+}
+
+.xmas-2022 .advent-announce-text:before {
+  background-image: url(./images/desk-left.svg);
+  left: -384px;
+  width: 318px;
+}
+
+.xmas-2022 .advent-announce-text:before,
+.xmas-2022 .advent-announce-text:after {
+  background-repeat: no-repeat;
+  background-size: cover;
+  content: "";
+  display: block;
+  height: 56px;
+  top: 0px;
+  position: absolute;
+  z-index: -1;
+}
+
+.xmas-2022 .advent-announce-text b {
+  font-weight: 700;
+}
+
+.xmas-2022 .advent-announce-text span {
+  color: #FFB979;
+}
+
+.advent-desktop-hide {
+  display: none;
+}
+
+@media screen and (max-width: 1023px) {
+  .xmas-2022 .advent-announce {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #466a93;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .xmas-2022 .advent-announce-text {
+    background-color: transparent;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+    height: auto;
+    line-height: 16px;
+    padding: 20px 0px;
+    white-space: normal;
+    width: auto !important;
+  }
+
+  .xmas-2022 .advent-announce-text:before,
+  .xmas-2022 .advent-announce-text:after {
+    height: 48px;
+  }
+
+  .xmas-2022 .advent-announce-text:after {
+    background-image: url(./images/mob-right.svg);
+    right: -54px;
+    width: 38px;
+  }
+
+  .xmas-2022 .advent-announce-text:before {
+    background-image: url(./images/mob-left.svg);
+    left: -56px;
+    width: 46px;
+  }
+
+  .xmas-2022 .advent-mobile-hide {
+    display: none;
+  }
+}
