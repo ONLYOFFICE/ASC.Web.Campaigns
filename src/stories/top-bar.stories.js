@@ -4,10 +4,6 @@ import lngs from "../../languages.json";
 
 const options = lngs.map((t) => t.shortKey);
 
-import lngs from "../../languages.json";
-
-const options = lngs.map((t) => t.shortKey);
-
 export default {
   title: "Example/TopBar",
   component: Layout,
