@@ -20,8 +20,8 @@ export default {
     language: {
       control: {
         type: "select",
-        options,
       },
+      options,
     },
   },
 };
