@@ -14,8 +14,8 @@ export default {
     theme: {
       control: {
         type: "select",
-        options: ["light", "dark"],
       },
+      options: ["light", "dark"],
     },
     language: {
       control: {
