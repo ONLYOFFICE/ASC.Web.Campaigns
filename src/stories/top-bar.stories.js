@@ -15,7 +15,17 @@ export default {
       control: {
         type: "select",
       },
-      options: ["Docs_7_1", "DocSpace", "MoveToDocSpace"],
+      options: [
+        "Christmas_2022",
+        "Docs_7_1",
+        "Docs_7_2",
+        "Docs_7_4",
+        "Docs_7_5",
+        "DocSpace",
+        "DocSpace_2_0",
+        "MoveToDocSpace",
+        "Zoom_DocSpace",
+      ],
     },
     theme: {
       control: {
@@ -38,7 +48,7 @@ export const Default = Template.bind({});
 
 Default.args = {
   origin: "http://localhost:8000", // use your source
-  name: "Docs_7_1",
+  name: "Zoom_DocSpace",
   language: "en",
   theme: "light",
 };
