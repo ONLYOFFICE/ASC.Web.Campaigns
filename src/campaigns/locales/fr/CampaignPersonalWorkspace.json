@@ -1,6 +1,6 @@
 {
-  "Header": "ONLYOFFICE Workspace",
-  "SubHeader": "Documents, projets, e-mails, clients sur votre propre serveur",
   "ButtonLabel": "Obtenir maintenant",
-  "Link": "https://www.onlyoffice.com/fr/download-workspace.aspx?utm_source=personal&utm_campaign=BannerPersonalWorkspace"
+  "Header": "ONLYOFFICE Workspace",
+  "Link": "https://www.onlyoffice.com/fr/download-workspace.aspx?utm_source=personal&utm_campaign=BannerPersonalWorkspace",
+  "SubHeader": "Documents, projets, e-mails, clients sur votre propre serveur"
 }
