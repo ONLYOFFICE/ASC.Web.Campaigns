@@ -1,4 +1,6 @@
 {
   "ButtonLabel": "现在就开始吧",
-  "Link": "https://www.onlyoffice.com/zh/docspace-registration.aspx"
+  "Header": "立即注册协作空间",
+  "Link": "https://www.onlyoffice.com/zh/docspace-registration.aspx",
+  "SubHeader": "协作编辑文档、电子表格、幻灯片、表单和 PDF。"
 }

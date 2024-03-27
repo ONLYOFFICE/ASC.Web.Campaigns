@@ -1,5 +1,7 @@
 {
   "ButtonLabel": "Več o tem",
+  "Header": "ONLYOFFICE za vašo platformo",
   "Link": "https://www.onlyoffice.com/for-developers.aspx",
-  "SubHeader": "WordPress, Odoo, Moodle, Nextcloud, etc."
+  "SubHeader": "WordPress, Odoo, Moodle, Nextcloud, etc.",
+  "Text": "Na voljo 40+ že pripravljenih integracij"
 }

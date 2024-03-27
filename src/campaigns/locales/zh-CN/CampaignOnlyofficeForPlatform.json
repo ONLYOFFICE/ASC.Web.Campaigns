@@ -1,4 +1,7 @@
 {
   "ButtonLabel": "了解更多",
-  "Link": "https://www.onlyoffice.com/zh/for-developers.aspx"
+  "Header": "在业务平台内使用 ONLYOFFICE",
+  "Link": "https://www.onlyoffice.com/zh/for-developers.aspx",
+  "SubHeader": "WordPress、Odoo、Moodle、Nextcloud 等",
+  "Text": "无缝集成到 40 多个平台"
 }

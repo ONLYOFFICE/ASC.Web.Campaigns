@@ -1,4 +1,6 @@
 {
   "ButtonLabel": "지금 시작",
-  "Link": "https://www.onlyoffice.com/docspace-registration.aspx"
+  "Header": "DocSpace를 만드세요",
+  "Link": "https://www.onlyoffice.com/docspace-registration.aspx",
+  "SubHeader": "문서, 시트, 슬라이드, 양식, PDF를 편집하고 공동작업하세요."
 }

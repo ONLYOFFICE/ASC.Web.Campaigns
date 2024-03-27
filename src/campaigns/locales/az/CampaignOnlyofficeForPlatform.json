@@ -1,4 +1,7 @@
 {
   "ButtonLabel": "Ətraflı məlumat",
-  "Link": "https://www.onlyoffice.com/for-developers.aspx"
+  "Header": "Platformanız üçün ONLYOFFICE",
+  "Link": "https://www.onlyoffice.com/for-developers.aspx",
+  "SubHeader": "WordPress, Odoo, Moodle, Nextcloud, və s.",
+  "Text": "40-dan artıq hazır inteqrasiya mövcuddur"
 }

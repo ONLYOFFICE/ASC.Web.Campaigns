@@ -1,4 +1,7 @@
 {
   "ButtonLabel": "Lue lisää",
-  "Link": "https://www.onlyoffice.com/for-developers.aspx"
+  "Header": "ONLYOFFICE alustallesi",
+  "Link": "https://www.onlyoffice.com/for-developers.aspx",
+  "SubHeader": "WordPress, Odoo, Moodle, Nextcloud, jne.",
+  "Text": "40+ valmista integraatiota saatavilla"
 }
