@@ -1,4 +1,7 @@
 {
   "ButtonLabel": "Más información",
-  "Link": "https://www.onlyoffice.com/es/for-developers.aspx"
+  "Header": "ONLYOFFICE para su plataforma",
+  "Link": "https://www.onlyoffice.com/es/for-developers.aspx",
+  "SubHeader": "WordPress, Odoo, Moodle, Nextcloud, etc.",
+  "Text": "Más de 40 integraciones disponibles"
 }

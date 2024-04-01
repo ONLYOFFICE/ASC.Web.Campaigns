@@ -1,4 +1,6 @@
 {
   "ButtonLabel": "Empezar ahora",
-  "Link": "https://www.onlyoffice.com/es/docspace-registration.aspx"
+  "Header": "Cree su DocSpace",
+  "Link": "https://www.onlyoffice.com/es/docspace-registration.aspx",
+  "SubHeader": "Edite y colabore en documentos, hojas, diapositivas, formularios y archivos PDF."
 }
