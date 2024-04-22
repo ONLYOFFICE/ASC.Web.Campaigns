@@ -10,13 +10,13 @@ const IndexPage = () => {
   const LinkHrefDocSpace_2_5 = t('Banner_DocSpace_2_5_Link');
 
   return (
-    <div className="DocSpace_2_5_released">
+    <div className="docspace_2_5_released">
       <div className={"advent-announce advent-mobile-hide " + language}>
         <a target="_blank" href={LinkHrefDocSpace_2_5} rel="noreferrer noopener">
           <div className="advent-announce-text">
             <div>
               <Trans i18nKey="Banner_DocSpace_2_5_TextDesktop">
-              <b>ONLYOFFICE <span>DocSpace 2.5 released:</span></b> Public rooms improvements, user groups, storage management, embedding presets, and more
+              <b><span></span>ONLYOFFICE <span>DocSpace 2.5 released:</span></b> Public rooms improvements, user groups, storage management, embedding presets, and more
               </Trans>
             </div>
           </div>

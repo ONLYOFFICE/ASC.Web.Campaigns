@@ -1,10 +1,11 @@
-.docspace_2_0_released div {
+.docspace_2_5_released div {
   font-family: "Open Sans", sans-serif, Arial;
   text-align: center;
 }
 
-.docspace_2_0_released .advent-announce {
-  background-color: #5694DB;
+.docspace_2_5_released .advent-announce {
+  background-color: #0A4DA6;
+  background-image: linear-gradient(73.99deg, #042959 23.48%, #0A4DA6 100%);
   height: 60px;
   left: 0;
   top: 0;
@@ -15,16 +16,28 @@
   z-index: 1001;
 }
 
-.docspace_2_0_released .advent-announce.fr .advent-announce-text {
-  max-width: 768px;
+.docspace_2_5_released .advent-announce::before,
+.docspace_2_5_released .advent-announce::after {
+  background-image: url(./images/rhombuses-bg.svg);
+  background-repeat: no-repeat;
+  content: "";
+  display: block;
+  height: 60px;
+  top: 0px;
+  position: absolute;
+  width: 260px;
 }
 
-.docspace_2_0_released .advent-announce.ru .advent-announce-text {
-  max-width: 542px;
-  padding: 9px 0 11px 0;
+.docspace_2_5_released .advent-announce::after {
+  background-position-x: -272px;
+  right: 0;
 }
 
-.docspace_2_0_released .advent-announce a {
+.docspace_2_5_released .advent-announce::before {
+  left: 0;
+}
+
+.docspace_2_5_released .advent-announce a {
   display: block;
   text-decoration: none;
   width: auto;
@@ -33,7 +46,7 @@
   width: 100%;
 }
 
-.docspace_2_0_released .advent-announce-text {
+.docspace_2_5_released .advent-announce-text {
   color: #FFFFFF;
   display: inline-block;
   font-size: 14px;
@@ -41,15 +54,15 @@
   letter-spacing: 0.01em;
   line-height: 20px;
   margin: 0 auto;
-  padding: 19px 0px 21px;
+  padding: 20px 0px;
   position: relative;
   text-align: center;
   text-decoration: none !important;
   z-index: 0;
 }
 
-.docspace_2_0_released .advent-announce-text:before,
-.docspace_2_0_released .advent-announce-text:after {
+.docspace_2_5_released .advent-announce-text:before,
+.docspace_2_5_released .advent-announce-text:after {
   background-image: url(./images/2-5-arrow.svg);
   background-repeat: no-repeat;
   content: "";
@@ -59,25 +72,25 @@
   z-index: -1;
 }
 
-.docspace_2_0_released .advent-announce-text:after {
+.docspace_2_5_released .advent-announce-text:after {
   background-position-x: -55px;
   right: -28px;
-  top: 8px;
+  top: 10px;
   width: 24px;
 }
 
-.docspace_2_0_released .advent-announce-text:before {
+.docspace_2_5_released .advent-announce-text:before {
   background-position-x: -5px;
   left: -59px;
-  top: 10px;
+  top: 11px;
   width: 43px;
 }
 
-.docspace_2_0_released .advent-announce-text b {
+.docspace_2_5_released .advent-announce-text b {
   font-weight: 600;
 }
 
-.docspace_2_0_released .advent-announce-text span {
+.docspace_2_5_released .advent-announce-text span {
   color: #93F9FE;
 }
 
@@ -85,66 +98,60 @@
   display: none;
 }
 
-@media screen and (max-width: 1023px) {
-  .docspace_2_0_released .advent-announce.fr {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-  }
-
-  .docspace_2_0_released .advent-mobile-hide.fr {
-    display: none;
-  }
+.docspace_2_5_released .advent-announce.de .advent-announce-text,
+.docspace_2_5_released .advent-announce.pt .advent-announce-text {
+  max-width: 818px;
+  padding: 10px 0px;
 }
 
-@media screen and (max-width: 896px) {
-  .docspace_2_0_released .advent-announce {
+.docspace_2_5_released .advent-announce.es .advent-announce-text,
+.docspace_2_5_released .advent-announce.it .advent-announce-text {
+  max-width: 794px;
+  padding: 10px 0px;
+}
+
+.docspace_2_5_released .advent-announce.fr .advent-announce-text {
+  max-width: 886px;
+  padding: 10px 0px;
+}
+
+.docspace_2_5_released .advent-announce.ru .advent-announce-text {
+  max-width: 878px;
+  padding: 10px 0px;
+}
+
+@media screen and (max-width: 1023px) {
+  .docspace_2_5_released .advent-announce {
     align-items: center;
     display: flex;
     justify-content: center;
   }
 
-  .docspace_2_0_released .advent-announce.ru .advent-announce-text {
-    padding: 21px 0px;
-  }
 
-  .docspace_2_0_released .advent-announce-text {
+  .docspace_2_5_released .advent-announce-text {
     display: inline-block;
     height: auto;
     line-height: 18px;
-    padding: 21px 0px;
+    padding: 21px 0px !important;
     white-space: normal;
     width: auto !important;
   }
 
-  .docspace_2_0_released .advent-announce-text:after {
-    background-image: url(./images/docspace-2-0-right-mob.svg);
-    right: -356px;
+  .docspace_2_5_released .advent-announce-text:after {
+    right: -26px;
   }
 
-  .docspace_2_0_released .advent-announce-text:before {
-    background-image: url(./images/docspace-2-0-left-mob.svg);
-    left: -37px;
-    top: 2px;
-    width: 59px;
+  .docspace_2_5_released .advent-announce-text:before {
+    display: none;
   }
 
-  .docspace_2_0_released .advent-mobile-hide {
+  .docspace_2_5_released .advent-mobile-hide {
     display: none;
   }
 }
 
-@media screen and (max-width: 479px) {
-  .docspace_2_0_released .advent-announce.de .advent-announce-text,
-  .docspace_2_0_released .advent-announce.fr .advent-announce-text,
-  .docspace_2_0_released .advent-announce.pt .advent-announce-text,
-  .docspace_2_0_released .advent-announce.pt-BR .advent-announce-text,
-  .docspace_2_0_released .advent-announce.ru .advent-announce-text {
-    font-size: 13px;
-    letter-spacing: -0.01em;
-  }
-
-  .docspace_2_0_released .advent-announce.es .advent-announce-text {
-    letter-spacing: -0.01em;
+@media screen and (max-width: 639px) {
+  .docspace_2_5_released .advent-announce::before {
+    display: none;
   }
 }
