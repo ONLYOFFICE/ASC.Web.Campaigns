@@ -16,7 +16,7 @@ const IndexPage = () => {
           <div className="advent-announce-text">
             <div>
               <Trans i18nKey="Banner_DocSpace_2_5_TextDesktop">
-              <b><span></span>ONLYOFFICE <span>DocSpace 2.5 released:</span></b> Public rooms improvements, user groups, storage management, embedding presets, and more
+              <b>ONLYOFFICE <span>DocSpace 2.5 released:</span></b> Public rooms improvements, user groups, storage management, embedding presets, and more
               </Trans>
             </div>
           </div>
