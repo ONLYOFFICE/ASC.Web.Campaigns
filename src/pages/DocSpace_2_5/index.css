@@ -1,0 +1,157 @@
+.docspace_2_5_released div {
+  font-family: "Open Sans", sans-serif, Arial;
+  text-align: center;
+}
+
+.docspace_2_5_released .advent-announce {
+  background-color: #0A4DA6;
+  background-image: linear-gradient(73.99deg, #042959 23.48%, #0A4DA6 100%);
+  height: 60px;
+  left: 0;
+  top: 0;
+  padding: 0;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  z-index: 1001;
+}
+
+.docspace_2_5_released .advent-announce::before,
+.docspace_2_5_released .advent-announce::after {
+  background-image: url(./images/rhombuses-bg.svg);
+  background-repeat: no-repeat;
+  content: "";
+  display: block;
+  height: 60px;
+  top: 0px;
+  position: absolute;
+  width: 260px;
+}
+
+.docspace_2_5_released .advent-announce::after {
+  background-position-x: -272px;
+  right: 0;
+}
+
+.docspace_2_5_released .advent-announce::before {
+  left: 0;
+}
+
+.docspace_2_5_released .advent-announce a {
+  display: block;
+  text-decoration: none;
+  width: auto;
+  animation-duration: 0.5s;
+  position: absolute;
+  width: 100%;
+}
+
+.docspace_2_5_released .advent-announce-text {
+  color: #FFFFFF;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  line-height: 20px;
+  margin: 0 auto;
+  padding: 20px 0px;
+  position: relative;
+  text-align: center;
+  text-decoration: none !important;
+  z-index: 0;
+}
+
+.docspace_2_5_released .advent-announce-text:before,
+.docspace_2_5_released .advent-announce-text:after {
+  background-image: url(./images/2-5-arrow.svg);
+  background-repeat: no-repeat;
+  content: "";
+  display: block;
+  height: 38px;
+  position: absolute;
+  z-index: -1;
+}
+
+.docspace_2_5_released .advent-announce-text:after {
+  background-position-x: -55px;
+  right: -28px;
+  top: 10px;
+  width: 24px;
+}
+
+.docspace_2_5_released .advent-announce-text:before {
+  background-position-x: -5px;
+  left: -59px;
+  top: 11px;
+  width: 43px;
+}
+
+.docspace_2_5_released .advent-announce-text b {
+  font-weight: 600;
+}
+
+.docspace_2_5_released .advent-announce-text span {
+  color: #93F9FE;
+}
+
+.advent-desktop-hide {
+  display: none;
+}
+
+.docspace_2_5_released .advent-announce.de .advent-announce-text,
+.docspace_2_5_released .advent-announce.pt .advent-announce-text {
+  max-width: 818px;
+  padding: 10px 0px;
+}
+
+.docspace_2_5_released .advent-announce.es .advent-announce-text,
+.docspace_2_5_released .advent-announce.it .advent-announce-text {
+  max-width: 794px;
+  padding: 10px 0px;
+}
+
+.docspace_2_5_released .advent-announce.fr .advent-announce-text {
+  max-width: 886px;
+  padding: 10px 0px;
+}
+
+.docspace_2_5_released .advent-announce.ru .advent-announce-text {
+  max-width: 878px;
+  padding: 10px 0px;
+}
+
+@media screen and (max-width: 1023px) {
+  .docspace_2_5_released .advent-announce {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+
+
+  .docspace_2_5_released .advent-announce-text {
+    display: inline-block;
+    height: auto;
+    line-height: 18px;
+    padding: 21px 0px !important;
+    white-space: normal;
+    width: auto !important;
+  }
+
+  .docspace_2_5_released .advent-announce-text:after {
+    right: -26px;
+  }
+
+  .docspace_2_5_released .advent-announce-text:before {
+    display: none;
+  }
+
+  .docspace_2_5_released .advent-mobile-hide {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 639px) {
+  .docspace_2_5_released .advent-announce::before {
+    display: none;
+  }
+}
