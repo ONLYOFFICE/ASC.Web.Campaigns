@@ -26,6 +26,7 @@ export default {
         "MoveToDocSpace",
         "Zoom_DocSpace",
         "DocSpace_2_5",
+        "DocSpace_UT",
       ],
     },
     theme: {
@@ -49,7 +50,7 @@ export const Default = Template.bind({});
 
 Default.args = {
   origin: "http://localhost:8000", // use your source
-  name: "DocSpace_2_5",
+  name: "DocSpace_UT",
   language: "en",
   theme: "light",
 };
