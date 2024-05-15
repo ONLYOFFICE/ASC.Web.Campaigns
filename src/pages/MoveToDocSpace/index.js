@@ -5,9 +5,12 @@ import "../../styles/base.css";
 import "./index.css";
 
 const IndexPage = () => {
-  const { t, i18n: { language } } = useTranslation("MoveToDocSpace");
+  const {
+    t,
+    i18n: { language },
+  } = useTranslation("MoveToDocSpace");
 
-  const LinkHrefDocSpace = t('Banner_MoveToDocSpace_Link');
+  const LinkHrefDocSpace = t("Banner_MoveToDocSpace_Link");
 
   return (
     <div className="move-to-docspace">
@@ -16,7 +19,9 @@ const IndexPage = () => {
           <div className="advent-announce-text">
             <div>
               <Trans i18nKey="Banner_MoveToDocSpace_TextDesktop">
-                <b>Move to ONLYOFFICE DocSpace:</b> create a <i>free</i> account or benefit from the <i>free</i> 3-month Business subscription. <b>Get started</b>
+                <b>Move to ONLYOFFICE DocSpace:</b> create a <i>free</i> account
+                or benefit from the <i>free</i> 3-month Business subscription.{" "}
+                <b>Get started</b>
               </Trans>
             </div>
           </div>
@@ -25,9 +30,9 @@ const IndexPage = () => {
       <div className={"advent-announce advent-desktop-hide " + language}>
         <a target="_blank" href={LinkHrefDocSpace} rel="noreferrer noopener">
           <div className="advent-announce-text">
-              <Trans i18nKey="Banner_MoveToDocSpace_TextMob">
-                <b>Move to ONLYOFFICE DocSpace</b>
-              </Trans>
+            <Trans i18nKey="Banner_MoveToDocSpace_TextMob">
+              <b>Move to ONLYOFFICE DocSpace</b>
+            </Trans>
           </div>
         </a>
       </div>
@@ -38,8 +43,8 @@ const IndexPage = () => {
 export default IndexPage;
 
 export const query = graphql`
-  query($language: String!) {
-    locales: allLocale(filter: { language: { eq: $language } }) {
+  query {
+    locales: allLocale {
       edges {
         node {
           ns
