@@ -2,9 +2,7 @@ const languages = require("./languages.json");
 
 const availableLanguages = languages.map((el) => el.shortKey);
 
-const {
-  defaultLanguage,
-} = require("./config.json");
+const { defaultLanguage } = require("./config.json");
 
 module.exports = {
   plugins: [
@@ -12,8 +10,8 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/src/locales`,
-        name: `locale`
-      }
+        name: `locale`,
+      },
     },
     {
       resolve: `gatsby-plugin-react-i18next`,
@@ -21,24 +19,25 @@ module.exports = {
         localeJsonSourceName: `locale`,
         languages: availableLanguages,
         defaultLanguage,
-        redirect: false,
+        redirect: true,
         generateDefaultLanguagePage: `/en`,
 
         i18nextOptions: {
-          fallbackLng: defaultLanguage,
+          fallbackLng: "en",
           interpolation: {
-            escapeValue: false
+            escapeValue: false,
           },
           keySeparator: false,
-          nsSeparator: false
+          nsSeparator: false,
         },
         pages: [
           {
-            matchPath: '/preview',
-            languages: [""],
+            matchPath: "/preview",
+            languages: availableLanguages,
+            getLanguageFromPath: true,
           },
         ],
-      }
+      },
     },
     {
       resolve: "gatsby-plugin-google-fonts",
@@ -46,6 +45,6 @@ module.exports = {
         fonts: ["Open Sans:400,600,700"],
       },
     },
-    'gatsby-plugin-no-javascript'
+    "gatsby-plugin-no-javascript",
   ],
-}
+};

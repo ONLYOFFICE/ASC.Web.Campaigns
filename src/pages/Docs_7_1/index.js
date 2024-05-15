@@ -5,7 +5,9 @@ import "../../styles/base.css";
 import "./index.css";
 
 const IndexPage = () => {
-  const { i18n: { language } } = useTranslation("Docs_7_1");
+  const {
+    i18n: { language },
+  } = useTranslation("Docs_7_1");
 
   const LinkHrefDocs71 =
     "https://www.onlyoffice.com/blog/2022/05/discover-onlyoffice-docs-v7-1/";
@@ -13,7 +15,12 @@ const IndexPage = () => {
   return (
     <div className="docs-7-1">
       <div className={"advent-announce advent-mobile-hide " + language}>
-        <a className="docs-7-1" target="_blank" href={LinkHrefDocs71} rel="noreferrer noopener">
+        <a
+          className="docs-7-1"
+          target="_blank"
+          href={LinkHrefDocs71}
+          rel="noreferrer noopener"
+        >
           <div className="advent-announce-text">
             <div>
               <Trans i18nKey="BannerTextDesktop">
@@ -28,7 +35,12 @@ const IndexPage = () => {
         </a>
       </div>
       <div className="advent-announce advent-desktop-hide">
-        <a className="docs-7-1" target="_blank" href={LinkHrefDocs71} rel="noreferrer noopener">
+        <a
+          className="docs-7-1"
+          target="_blank"
+          href={LinkHrefDocs71}
+          rel="noreferrer noopener"
+        >
           <div className="advent-announce-text">
             <Trans i18nKey="BannerTextMob">
               <b>
@@ -45,8 +57,8 @@ const IndexPage = () => {
 export default IndexPage;
 
 export const query = graphql`
-  query($language: String!) {
-    locales: allLocale(filter: { language: { eq: $language } }) {
+  query {
+    locales: allLocale {
       edges {
         node {
           ns
