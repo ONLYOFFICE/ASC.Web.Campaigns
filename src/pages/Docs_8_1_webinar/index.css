@@ -1,0 +1,162 @@
+.docs_8_1_webinar div {
+  font-family: "Open Sans", sans-serif, Arial;
+  text-align: center;
+}
+
+.docs_8_1_webinar .advent-announce {
+  background-color: #FFFFFF;
+  height: 60px;
+  left: 0;
+  top: 0;
+  padding: 0;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  z-index: 1001;
+}
+
+.docs_8_1_webinar .advent-announce::before,
+.docs_8_1_webinar .advent-announce::after {
+  background-repeat: no-repeat;
+  content: "";
+  display: block;
+  height: 60px;
+  top: 0px;
+  position: absolute;
+}
+
+.docs_8_1_webinar .advent-announce::after {
+  background-image: url(./images/desktop-docs-8.1-right.svg);
+  background-position-x: 100%;
+  right: 0;
+  width: 513px;
+}
+
+.docs_8_1_webinar .advent-announce::before {
+  background-image: url(./images/desktop-docs-8.1-left.svg);
+  background-position-y: -9px;
+  left: 0;
+  width: 352px;
+}
+
+.docs_8_1_webinar .advent-announce a {
+  display: block;
+  text-decoration: none;
+  width: auto;
+  animation-duration: 0.5s;
+  position: absolute;
+  width: 100%;
+}
+
+.docs_8_1_webinar .advent-announce-text {
+  color: #385362;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  line-height: 19px;
+  margin: 0 auto;
+  padding: 21px 0px 20px;
+  position: relative;
+  text-align: center;
+  text-decoration: none !important;
+  z-index: 1;
+}
+
+.docs_8_1_webinar .advent-announce-text:before,
+.docs_8_1_webinar .advent-announce-text:after {
+  background-image: url(./images/8.1-arrow.svg);
+  background-repeat: no-repeat;
+  content: "";
+  display: block;
+  height: 36px;
+  position: absolute;
+  z-index: -1;
+}
+
+.docs_8_1_webinar .advent-announce-text:after {
+  background-position-x: 100%;
+  right: -28px;
+  top: 13px;
+  width: 24px;
+}
+
+.docs_8_1_webinar .advent-announce-text:before {
+  left: -48px;
+  top: 12px;
+  width: 36px;
+}
+
+.docs_8_1_webinar .advent-announce-text b {
+  font-weight: 700;
+}
+
+.advent-desktop-hide {
+  display: none;
+}
+
+.docs_8_1_webinar .advent-announce.de .advent-announce-text {
+  max-width: 620px;
+  padding: 11px 0px;
+}
+
+.docs_8_1_webinar .advent-announce.it .advent-announce-text {
+  max-width: 580px;
+  padding: 11px 0px;
+}
+
+.docs_8_1_webinar .advent-announce.ru .advent-announce-text {
+  max-width: 690px;
+  padding: 11px 0px;
+}
+
+@media screen and (max-width: 1023px) {
+  .docs_8_1_webinar .advent-announce::before {
+    left: calc(50% - 498px);
+  }
+  
+  .docs_8_1_webinar .advent-announce::after {
+    right: calc(50% - 503px);
+  }
+
+  .docs_8_1_webinar .advent-mobile-hide {
+    display: none;
+  }
+
+  .docs_8_1_webinar .advent-desktop-hide {
+    display: block;
+  }
+
+  .docs_8_1_webinar .advent-announce.de .advent-announce-text,
+  .docs_8_1_webinar .advent-announce.it .advent-announce-text {
+    padding: 21px 0px 20px;
+  }
+}
+
+@media screen and (max-width: 639px) {
+  .docs_8_1_webinar .advent-announce::before {
+    left: calc(50% - 442px);
+  }
+
+  .docs_8_1_webinar .advent-announce::after {
+    right: calc(50% - 490px);
+  }
+
+  .docs_8_1_webinar .advent-announce.ja .advent-announce-text,
+  .docs_8_1_webinar .advent-announce.ja-JP .advent-announce-text {
+    max-width: 214px !important;
+  }
+
+  .docs_8_1_webinar .advent-announce-text {
+    display: inline-block;
+    font-size: 13px;
+    height: auto;
+    max-width: 202px !important;
+    padding: 11px 0px !important;
+    white-space: normal;
+  }
+
+  .docs_8_1_webinar .advent-announce-text:after {
+    right: -32px;
+  }
+}
