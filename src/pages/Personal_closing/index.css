@@ -1,0 +1,196 @@
+.personal_closing div {
+  font-family: "Open Sans", sans-serif, Arial;
+  text-align: center;
+}
+
+.personal_closing .advent-announce {
+  background-color: #FFFFFF;
+  height: 60px;
+  left: 0;
+  top: 0;
+  padding: 0;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  z-index: 1001;
+}
+
+.personal_closing .advent-announce::before,
+.personal_closing .advent-announce::after {
+  background-image: url(./images/scratches.svg);
+  background-repeat: no-repeat;
+  content: "";
+  display: block;
+  height: 60px;
+  position: absolute;
+}
+
+.personal_closing .advent-announce::after {
+  background-position-x: 100%;
+  right: 5px;
+  top: 5px;
+  width: 338px;
+}
+
+.personal_closing .advent-announce::before {
+  background-position-x: left;
+  left: 13px;
+  top: 3px;
+  width: 313px;
+}
+
+.personal_closing .advent-announce a {
+  border-bottom: 1px solid #D0D5DA;
+  display: block;
+  text-decoration: none;
+  width: auto;
+  animation-duration: 0.5s;
+  position: absolute;
+  width: 100%;
+}
+
+.personal_closing .advent-announce-text {
+  color: #385362;
+  display: inline-block;
+  font-size: 14px;
+  line-height: 19px;
+  margin: 0 auto;
+  max-width: 789px;
+  padding: 20px 0px;
+  position: relative;
+  text-align: center;
+  text-decoration: none !important;
+  z-index: 1;
+}
+
+.personal_closing .advent-announce-text:before,
+.personal_closing .advent-announce-text:after {
+  background-image: url(./images/icons.svg);
+  background-repeat: no-repeat;
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+}
+
+.personal_closing .advent-announce-text:after {
+  background-position: 100% -102px;
+  height: 24px;
+  right: -28px;
+  top: 18px;
+  width: 24px;
+}
+
+.personal_closing .advent-announce-text:before {
+  background-position-y: -84px;
+  height: 59px;
+  left: -135px;
+  top: 0px;
+  width: 224px;
+}
+
+.personal_closing .advent-announce-text b {
+  color: #FF6F3D;
+  font-weight: 700;
+}
+
+.personal_closing .advent-announce-text strong {
+  font-weight: 700;
+}
+
+.advent-desktop-hide {
+  display: none;
+}
+
+.personal_closing .advent-announce.es .advent-announce-text {
+  max-width: 750px;
+}
+
+.personal_closing .advent-announce.ru .advent-announce-text {
+  max-width: 882px;
+}
+
+.personal_closing .advent-announce-text.zh:after,
+.personal_closing .advent-announce-text.zh-CN:after {
+  top: 11px;
+}
+
+@media screen and (max-width: 1199px) {
+  .personal_closing .advent-announce.ru .advent-announce-text {
+    max-width: 776px;
+    padding: 11px 0px 10px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .personal_closing .advent-announce {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .personal_closing .advent-announce::before,
+  .personal_closing .advent-announce::after,
+  .personal_closing .advent-mobile-hide {
+    display: none;
+  }
+
+  .personal_closing .advent-announce-text {
+    display: inline-block;
+    font-weight: 700;
+    height: auto;
+    white-space: normal;
+  }
+
+  .personal_closing .advent-announce-text:after {
+    right: -28px;
+  }
+
+  .personal_closing .advent-announce.ru .advent-announce-text {
+    padding: 20px 0px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .personal_closing .advent-announce-text::before {
+    background-image: url(./images/circle.svg);
+    background-position-y: center;
+    height: 59px;
+    left: -65px;
+    top: 0;
+    width: 124px;
+  }
+}
+
+@media screen and (max-width: 424px) {
+  .personal_closing .advent-announce.ru .advent-announce-text {
+    font-size: 13px;
+    max-width: 226px;
+    padding: 11px 0px 10px;
+  }
+}
+
+@media screen and (max-width: 359px) {
+  .personal_closing .advent-announce-text {
+    font-size: 13px;
+    max-width: 226px;
+    padding: 11px 0px 10px;
+  }
+
+  .personal_closing .advent-announce-text::before {
+    left: -65px;
+  }
+
+  .personal_closing .advent-announce.de .advent-announce-text,
+  .personal_closing .advent-announce.fr .advent-announce-text {
+    max-width: 206px;
+  }
+
+  .personal_closing .advent-announce.es .advent-announce-text,
+  .personal_closing .advent-announce.ja .advent-announce-text,
+  .personal_closing .advent-announce.ja-JP .advent-announce-text,
+  .personal_closing .advent-announce.zh .advent-announce-text,
+  .personal_closing .advent-announce.zh-CN .advent-announce-text {
+    padding: 20px 0;
+  }
+}
