@@ -31,6 +31,7 @@ export default {
         "Docs_8_1",
         "DocSpace_2_6",
         "Personal_closing",
+        "Docs_8_2_20241017",
       ],
     },
     theme: {
@@ -54,7 +55,7 @@ export const Default = Template.bind({});
 
 Default.args = {
   origin: "http://localhost:8000", // use your source
-  name: "Personal_closing",
+  name: "Docs_8_2_20241017",
   language: "en",
   theme: "light",
 };
