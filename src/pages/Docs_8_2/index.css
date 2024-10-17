@@ -112,4 +112,16 @@
   .docs_8_2 .advent-announce-text {
     max-width: 208px;
   }
+
+  .docs_8_2 .advent-announce.de .advent-announce-text {
+    max-width: 166px;
+    padding: 13px 36px 13px 0px !important;
+  }
+
+  .docs_8_2 .advent-announce.es .advent-announce-text,
+  .docs_8_2 .advent-announce.fr .advent-announce-text,
+  .docs_8_2 .advent-announce.pt .advent-announce-text,
+  .docs_8_2 .advent-announce.pt-BR .advent-announce-text {
+    max-width: initial;
+  }
 }
