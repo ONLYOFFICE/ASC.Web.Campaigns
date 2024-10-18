@@ -1,0 +1,127 @@
+.docs_8_2 div {
+  font-family: "Open Sans", sans-serif, Arial;
+  text-align: center;
+}
+
+.docs_8_2 .advent-announce {
+  background-color: #1B181F;
+  background-image: url(./images/docs-8-2-bg.svg);
+  background-position-x: center;
+  background-repeat: no-repeat;
+  height: 60px;
+  left: 0;
+  top: 0;
+  padding: 0;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  z-index: 1001;
+}
+
+.docs_8_2 .advent-announce a {
+  display: block;
+  text-decoration: none;
+  width: auto;
+  animation-duration: 0.5s;
+  position: absolute;
+  width: 100%;
+}
+
+.docs_8_2 .advent-announce-text {
+  color: #FFFFFF;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  line-height: 20px;
+  margin: 0 auto;
+  padding: 20px 0px;
+  position: relative;
+  text-align: center;
+  text-decoration: none !important;
+  z-index: 0;
+}
+
+.docs_8_2 .advent-announce-text:before,
+.docs_8_2 .advent-announce-text:after {
+  background-repeat: no-repeat;
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+}
+
+.docs_8_2 .advent-announce-text:after {
+  background-image: url(./images/white-arrow.svg);
+  height: 23px;
+  right: -36px;
+  top: 19px;
+  width: 22px;
+}
+
+.docs_8_2 .advent-announce-text:before {
+  background-image: url(./images/docs-8-2-pdf.svg);
+  height: 64px;
+  left: -70px;
+  top: 0;
+  width: 64px;
+}
+
+.docs_8_2 .advent-announce-text strong {
+  font-weight: 800;
+}
+
+.advent-desktop-hide {
+  display: none;
+}
+
+.docs_8_2 .advent-announce.ru .advent-announce-text {
+  max-width: 708px;
+  padding: 10px 0px;
+}
+
+@media screen and (max-width: 1023px) {
+  .docs_8_2 .advent-announce {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .docs_8_2 .advent-announce-text {
+    display: inline-block;
+    height: auto;
+    line-height: 18px;
+    padding: 21px 36px 21px 0px !important;
+    white-space: normal;
+  }
+
+  .docs_8_2 .advent-announce-text::after {
+    right: 0;
+  }
+
+  .docs_8_2 .advent-announce-text:before {
+    display: none;
+  }
+
+  .docs_8_2 .advent-mobile-hide {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .docs_8_2 .advent-announce-text {
+    max-width: 208px;
+  }
+
+  .docs_8_2 .advent-announce.de .advent-announce-text {
+    max-width: 166px;
+    padding: 13px 36px 13px 0px !important;
+  }
+
+  .docs_8_2 .advent-announce.es .advent-announce-text,
+  .docs_8_2 .advent-announce.fr .advent-announce-text,
+  .docs_8_2 .advent-announce.pt .advent-announce-text,
+  .docs_8_2 .advent-announce.pt-BR .advent-announce-text {
+    max-width: initial;
+  }
+}
