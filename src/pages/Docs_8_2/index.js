@@ -8,7 +8,7 @@ const IndexPage = () => {
   const {
     t,
     i18n: { language },
-  } = useTranslation("DocSpace_2_6");
+  } = useTranslation("Docs_8_2");
 
   const LinkHrefDocSpace_2_6 = t("Banner_Docs_8_2_Link");
 
