@@ -8,22 +8,22 @@ const IndexPage = () => {
   const {
     t,
     i18n: { language },
-  } = useTranslation("Docs_8_2");
+  } = useTranslation("DocSpace_3_0");
 
-  const LinkHrefDocSpace_2_6 = t("Banner_Docs_8_2_Link");
+  const LinkHrefDocSpace_3_0 = t("Banner_DocSpace_3_0_Link");
 
   return (
-    <div className="docs_8_2">
+    <div className="docSpace_3_0_released">
       <div className={"advent-announce advent-mobile-hide " + language}>
         <a
           target="_blank"
-          href={LinkHrefDocSpace_2_6}
+          href={LinkHrefDocSpace_3_0}
           rel="noreferrer noopener"
         >
           <div className="advent-announce-text">
             <div>
-              <Trans i18nKey="Banner_Docs_8_2_TextDesktop">
-                <strong>ONLYOFFICE Docs 8.2 released:</strong> PDF collaborative editing, revamped interface, optimized performance, and more
+              <Trans i18nKey="Banner_DocSpace_3_0_TextDesktop">
+                <strong>ONLYOFFICE DocSpace 3.0 released</strong><span className="bannerlightblue">:</span> Updated user types<span className="bullet">•</span>Virtual Data rooms<span className="bullet">•</span>OAuth2.0<span className="bullet">•</span>Improved room & File management<span className="bullet">•</span>and more
               </Trans>
             </div>
           </div>
@@ -32,15 +32,13 @@ const IndexPage = () => {
       <div className={"advent-announce advent-desktop-hide " + language}>
         <a
           target="_blank"
-          href={LinkHrefDocSpace_2_6}
+          href={LinkHrefDocSpace_3_0}
           rel="noreferrer noopener"
         >
           <div className="advent-announce-text">
-            <strong>
-              <Trans i18nKey="Banner_Docs_8_2_TextMob">
-                Meet ONLYOFFICE Docs 8.2
-              </Trans>
-            </strong>
+            <Trans i18nKey="Banner_DocSpace_3_0_TextMob">
+              <strong>ONLYOFFICE DocSpace 3.0</strong> released
+            </Trans>
           </div>
         </a>
       </div>
