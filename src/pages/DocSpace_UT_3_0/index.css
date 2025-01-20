@@ -1,0 +1,437 @@
+.docSpace_UT_3_0 div {
+  font-family: "Open Sans", sans-serif, Arial;
+  text-align: center;
+}
+
+.docSpace_UT_3_0 .advent-announce {
+  background-color: #FFFFFF;
+  border-bottom: 1px solid #385362;
+  box-sizing: border-box;
+  height: 60px;
+  left: 0;
+  top: 0;
+  padding: 0;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  z-index: 1001;
+}
+
+.docSpace_UT_3_0 .advent-announce::before,
+.docSpace_UT_3_0 .advent-announce::after {
+  background-repeat: no-repeat;
+  border-bottom: 1px solid #385362;
+  content: "";
+  display: block;
+  height: 59px;
+  top: 0px;
+  position: absolute;
+}
+
+.docSpace_UT_3_0 .advent-announce::after {
+  background-image: url(./images/docspace-ut-3-0-right.svg);
+  background-position-y: -70px;
+  right: 0;
+  width: 338px;
+}
+
+.docSpace_UT_3_0 .advent-announce::before {
+  background-image: url(./images/docspace-ut-3-0-left.svg);
+  background-position: -30px -106px;
+  left: 0;
+  width: 362px;
+}
+
+.docSpace_UT_3_0 .advent-announce a {
+  display: block;
+  text-decoration: none;
+  width: auto;
+  animation-duration: 0.5s;
+  position: absolute;
+  width: 100%;
+}
+
+.docSpace_UT_3_0 .advent-announce-text {
+  color: #385362;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  line-height: 19px;
+  margin: 0 auto;
+  padding: 20px 0px;
+  position: relative;
+  text-align: center;
+  text-decoration: none !important;
+  z-index: 1;
+}
+
+.docSpace_UT_3_0 .advent-announce.en .advent-announce-text {
+  max-width: 371px;
+}
+
+.docSpace_UT_3_0 .advent-announce-text:before,
+.docSpace_UT_3_0 .advent-announce-text:after {
+  background-image: url(./images/docspace-ut-3-0-icons.svg);
+  background-repeat: no-repeat;
+  content: "";
+  display: block;
+  height: 56px;
+  position: absolute;
+  z-index: -1;
+}
+
+.docSpace_UT_3_0 .advent-announce-text::after {
+  background-position-x: right;
+  right: -28px;
+  top: 2px;
+  width: 24px;
+}
+
+.docSpace_UT_3_0 .advent-announce-text::before {
+  left: -84px;
+  top: 0px;
+  width: 72px;
+}
+
+.advent-desktop-hide {
+  display: none;
+}
+
+@media screen and (max-width: 1199px) {
+  .docSpace_UT_3_0 .advent-announce::before {
+    left: -108px;
+  }
+
+  .docSpace_UT_3_0 .advent-announce::after {
+    right: -80px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .docSpace_UT_3_0 .advent-announce.ru .advent-announce-text {
+    max-width: 336px;
+    padding: 11px 0px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .docSpace_UT_3_0 .advent-announce.es .advent-announce-text {
+    max-width: 286px;
+    padding: 11px 0px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .docSpace_UT_3_0 .advent-announce.pt .advent-announce-text,
+  .docSpace_UT_3_0 .advent-announce.pt-BR .advent-announce-text {
+    max-width: 266px;
+    padding: 11px 0px;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .docSpace_UT_3_0 .advent-announce {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .docSpace_UT_3_0 .advent-announce.en .advent-announce-text,
+  .docSpace_UT_3_0 .advent-announce.it .advent-announce-text {
+    max-width: 196px;
+  }
+
+  .docSpace_UT_3_0 .advent-announce.de .advent-announce-text {
+    max-width: 216px;
+  }
+
+  .docSpace_UT_3_0 .advent-announce.es .advent-announce-text {
+    max-width: 282px;
+  }
+
+  .docSpace_UT_3_0 .advent-announce.fr .advent-announce-text {
+    max-width: 252px;
+  }
+
+  .docSpace_UT_3_0 .advent-announce.ja .advent-announce-text,
+  .docSpace_UT_3_0 .advent-announce.ja-JP .advent-announce-text {
+    max-width: 202px;
+  }
+
+  .docSpace_UT_3_0 .advent-announce.ru .advent-announce-text {
+    max-width: 306px;
+  }
+
+  .docSpace_UT_3_0 .advent-announce-text {
+    padding: 12px 0px;
+  }
+
+  .docSpace_UT_3_0 .advent-mobile-hide {
+    display: none;
+  }
+
+  .docSpace_UT_3_0 .advent-announce.zh .advent-announce-text,
+  .docSpace_UT_3_0 .advent-announce.zh-CN .advent-announce-text {
+    font-size: 14px;
+    padding: 20px 0px;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .docSpace_UT_3_0 .advent-announce.en .advent-announce-text,
+  .docSpace_UT_3_0 .advent-announce.it .advent-announce-text {
+    max-width: 186px;
+  }
+
+  .docSpace_UT_3_0 .advent-announce.de .advent-announce-text {
+    max-width: 196px;
+  }
+
+  .docSpace_UT_3_0 .advent-announce.es .advent-announce-text {
+    max-width: 262px;
+  }
+
+  .docSpace_UT_3_0 .advent-announce.fr .advent-announce-text {
+    max-width: 236px;
+  }
+
+  .docSpace_UT_3_0 .advent-announce.ja .advent-announce-text,
+  .docSpace_UT_3_0 .advent-announce.ja-JP .advent-announce-text {
+    max-width: 192px;
+  }
+
+  .docSpace_UT_3_0 .advent-announce.pt .advent-announce-text,
+  .docSpace_UT_3_0 .advent-announce.pt-BR .advent-announce-text {
+    max-width: 246px;
+  }
+
+  .docSpace_UT_3_0 .advent-announce.zh .advent-announce-text,
+  .docSpace_UT_3_0 .advent-announce.zh-CN .advent-announce-text {
+    max-width: 182px;
+    padding: 12px 0px;
+  }
+
+  .docSpace_UT_3_0 .advent-announce-text {
+    display: inline-block;
+    font-size: 13px;
+    line-height: 18px;
+    height: auto;
+    white-space: normal;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .docSpace_UT_3_0 .advent-announce.es::after,
+  .docSpace_UT_3_0 .advent-announce.pt::after,
+  .docSpace_UT_3_0 .advent-announce.pt-BR::after,
+  .docSpace_UT_3_0 .advent-announce.ru::after {
+    right: -148px;
+  }
+
+  .docSpace_UT_3_0 .advent-announce.es::before,
+  .docSpace_UT_3_0 .advent-announce.pt::before,
+  .docSpace_UT_3_0 .advent-announce.pt-BR::before,
+  .docSpace_UT_3_0 .advent-announce.ru::before {
+    left: -215px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .docSpace_UT_3_0 .advent-announce.fr::after {
+    right: -148px;
+  }
+
+  .docSpace_UT_3_0 .advent-announce.fr::before {
+    left: -215px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .docSpace_UT_3_0 .advent-announce::before {
+    left: -148px;
+  }
+
+  .docSpace_UT_3_0 .advent-announce::after {
+    right: -128px;
+  }
+}
+
+@media screen and (max-width: 719px) {
+  .docSpace_UT_3_0 .advent-announce::after {
+    right: -148px;
+  }
+
+  .docSpace_UT_3_0 .advent-announce::before {
+    left: -215px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .docSpace_UT_3_0 .advent-announce.ru::before {
+    background-image: url(./images/docspace-ut-3-0-left-mob.svg);
+    background-position: -136px -100px;
+    left: 0;
+    width: 82px;
+  }
+
+  .docSpace_UT_3_0 .advent-announce.ru::after {
+    background-image: url(./images/docspace-ut-3-0-left-mob.svg);
+    background-position: 100% -127px;
+    right: 14px;
+    width: 48px;
+  }
+
+  .docSpace_UT_3_0 .advent-announce.ru .advent-announce-text::before {
+    background-size: auto 35px;
+    height: 35px;
+    left: -53px;
+    top: 12px;
+    width: 45px;
+  }
+
+  .docSpace_UT_3_0 .advent-announce.ru .advent-announce-text::after {
+    right: -32px;
+  }
+}
+
+@media screen and (max-width: 592px) {
+  .docSpace_UT_3_0 .advent-announce.es::before {
+    background-image: url(./images/docspace-ut-3-0-left-mob.svg);
+    background-position: -136px -100px;
+    left: 0;
+    width: 82px;
+  }
+
+  .docSpace_UT_3_0 .advent-announce.es::after {
+    background-image: url(./images/docspace-ut-3-0-left-mob.svg);
+    background-position: 100% -127px;
+    right: 14px;
+    width: 48px;
+  }
+
+  .docSpace_UT_3_0 .advent-announce.es .advent-announce-text::before {
+    background-size: auto 35px;
+    height: 35px;
+    left: -53px;
+    top: 12px;
+    width: 45px;
+  }
+
+  .docSpace_UT_3_0 .advent-announce.es .advent-announce-text::after {
+    right: -32px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .docSpace_UT_3_0 .advent-announce.pt .advent-announce-text::before,
+  .docSpace_UT_3_0 .advent-announce.pt-BR .advent-announce-text::before {
+    background-size: auto 48px;
+    height: 48px;
+    left: -72px;
+    top: 4px;
+    width: 62px;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .docSpace_UT_3_0 .advent-announce::before {
+    background-image: url(./images/docspace-ut-3-0-left-mob.svg);
+    background-position: -136px -100px;
+    left: 0 !important;
+    width: 82px;
+  }
+
+  .docSpace_UT_3_0 .advent-announce::after {
+    background-image: url(./images/docspace-ut-3-0-left-mob.svg);
+    background-position: 100% -127px;
+    right: 14px !important;
+    width: 48px;
+  }
+
+  .docSpace_UT_3_0 .advent-announce.zh .advent-announce-text,
+  .docSpace_UT_3_0 .advent-announce.zh-CN .advent-announce-text {
+    font-size: 13px;
+    max-width: 162px;
+    padding: 12px 0px;
+  }
+
+  .docSpace_UT_3_0 .advent-announce-text::before,
+  .docSpace_UT_3_0 .advent-announce.pt .advent-announce-text::before,
+  .docSpace_UT_3_0 .advent-announce.pt-BR .advent-announce-text::before {
+    background-size: auto 35px;
+    height: 35px;
+    left: -53px;
+    top: 12px;
+    width: 45px;
+  }
+
+  .docSpace_UT_3_0 .advent-announce-text::after {
+    right: -32px;
+  }
+}
+
+@media screen and (max-width: 455px) {
+  .docSpace_UT_3_0 .advent-announce.ru .advent-announce-text {
+    font-size: 12px;
+    line-height: 16px;
+    max-width: 262px;
+    padding: 14px 0px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .docSpace_UT_3_0 .advent-announce-text {
+    font-size: 12px;
+    line-height: 17px;
+    padding: 13px 0;
+  }
+
+  .docSpace_UT_3_0 .advent-announce.es .advent-announce-text {
+    max-width: 236px;
+  }
+
+  .docSpace_UT_3_0 .advent-announce.fr .advent-announce-text {
+    max-width: 216px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .docSpace_UT_3_0 .advent-announce.es .advent-announce-text {
+    max-width: 192px;
+    padding: 6px 0px;
+  }
+
+  .docSpace_UT_3_0 .advent-announce.pt .advent-announce-text,
+  .docSpace_UT_3_0 .advent-announce.pt-BR .advent-announce-text {
+    font-size: 12px;
+    line-height: 16px;
+    max-width: 225px;
+    padding: 14px 0px 14px 14px;
+  }
+
+  .docSpace_UT_3_0 .advent-announce.pt .advent-announce-text::before,
+  .docSpace_UT_3_0 .advent-announce.pt-BR .advent-announce-text::before {
+    left: -39px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .docSpace_UT_3_0 .advent-announce.ru .advent-announce-text {
+    max-width: 196px;
+    padding: 6px 0px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .docSpace_UT_3_0 .advent-announce.ru .advent-announce-text {
+    max-width: 196px;
+    padding: 6px 0px;
+  }
+}
+
+@media screen and (max-width: 359px) {
+  .docSpace_UT_3_0 .advent-announce.fr .advent-announce-text {
+    max-width: 190px;
+    padding: 6px 0px;
+  }
+}
