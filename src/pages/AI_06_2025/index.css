@@ -1,0 +1,315 @@
+.ai_06_2025 div {
+  font-family: "Open Sans", sans-serif, Arial;
+  text-align: center;
+}
+
+.ai_06_2025 .advent-announce {
+  background-color: #E0F7FF;
+  background-image: url(./images/ai-06-2025-desk.png);
+  background-position: center 25%;
+  background-repeat: repeat-x;
+  background-size: auto 120px;
+  height: 60px;
+  left: 0;
+  top: 0;
+  padding: 0;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  z-index: 1001;
+}
+
+.ai_06_2025 .advent-announce a {
+  display: block;
+  text-decoration: none;
+  width: auto;
+  animation-duration: 0.5s;
+  position: absolute;
+  width: 100%;
+}
+
+.ai_06_2025 .advent-announce-text {
+  color: #385362;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  line-height: 20px;
+  margin: 0 auto;
+  max-width: 638px;
+  padding: 10px 0px;
+  position: relative;
+  text-align: center;
+  text-decoration: none !important;
+  z-index: 0;
+}
+
+.ai_06_2025 .advent-announce.de .advent-announce-text {
+  max-width: 750px;
+}
+
+.ai_06_2025 .advent-announce.es .advent-announce-text {
+  max-width: 748px;
+}
+
+.ai_06_2025 .advent-announce.fr .advent-announce-text {
+  max-width: 768px;
+}
+
+.ai_06_2025 .advent-announce.zh .advent-announce-text,
+.ai_06_2025 .advent-announce.zh-CN .advent-announce-text {
+  max-width: none;
+  padding: 20px 0;
+}
+
+.ai_06_2025 .advent-announce.ja .advent-announce-text,
+.ai_06_2025 .advent-announce.ja-JP .advent-announce-text {
+  max-width: 812px;
+}
+
+.ai_06_2025 .advent-announce.pt .advent-announce-text,
+.ai_06_2025 .advent-announce.pt-BR .advent-announce-text {
+  max-width: 772px;
+}
+
+.ai_06_2025 .advent-announce.ru .advent-announce-text {
+  max-width: 748px;
+}
+
+.ai_06_2025 .advent-announce-text::before,
+.ai_06_2025 .advent-announce-text::after {
+  background-image: url(./images/ai-06-2025-icon.svg);
+  background-repeat: no-repeat;
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+}
+
+.ai_06_2025 .advent-announce-text::after {
+  background-position: right;
+  height: 24px;
+  right: -28px;
+  top: 18px;
+  width: 24px;
+}
+
+.ai_06_2025 .advent-announce-text::before {
+  height: 98px;
+  left: -198px;
+  top: -10px;
+  width: 187px;
+}
+
+.advent-desktop-hide {
+  display: none;
+}
+
+@media screen and (max-width: 1439px) {
+  .ai_06_2025 .advent-announce.fr .advent-announce-text {
+    max-width: 718px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .ai_06_2025 .advent-announce.de .advent-announce-text,
+  .ai_06_2025 .advent-announce.fr .advent-announce-text {
+    max-width: 614px;
+  }
+
+  .ai_06_2025 .advent-announce.es .advent-announce-text {
+    max-width: 618px;
+  }
+
+  .ai_06_2025 .advent-announce.ja .advent-announce-text,
+  .ai_06_2025 .advent-announce.ja-JP .advent-announce-text {
+    max-width: 630px;
+  }
+
+  .ai_06_2025 .advent-announce.pt .advent-announce-text,
+  .ai_06_2025 .advent-announce.pt-BR .advent-announce-text {
+    max-width: 624px;
+  }
+
+  .ai_06_2025 .advent-announce.ru .advent-announce-text {
+    max-width: 692px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .ai_06_2025 .advent-announce.ru .advent-announce-text {
+    max-width: 644px;
+  }
+}
+
+@media screen and (max-width: 959px) {
+  .ai_06_2025 .advent-announce {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .ai_06_2025 .advent-announce-text {
+    font-weight: 700;
+    height: auto;
+    line-height: 18px;
+    padding: 21px 0px !important;
+    white-space: normal;
+    width: auto !important;
+  }
+
+  .ai_06_2025 .advent-announce-text::after {
+    right: -32px;
+  }
+
+  .ai_06_2025 .advent-mobile-hide {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 719px) {
+  .ai_06_2025 .advent-announce.es .advent-announce-text,
+  .ai_06_2025 .advent-announce.it .advent-announce-text,
+  .ai_06_2025 .advent-announce.pt .advent-announce-text,
+  .ai_06_2025 .advent-announce.pt-BR .advent-announce-text,
+  .ai_06_2025 .advent-announce.ru .advent-announce-text {
+    padding-right: 28px !important;
+  }
+
+  .ai_06_2025 .advent-announce.es .advent-announce-text::before,
+  .ai_06_2025 .advent-announce.it .advent-announce-text::before,
+  .ai_06_2025 .advent-announce.pt .advent-announce-text::before,
+  .ai_06_2025 .advent-announce.pt-BR .advent-announce-text::before,
+  .ai_06_2025 .advent-announce.ru .advent-announce-text::before {
+    display: none;
+  }
+
+  .ai_06_2025 .advent-announce.es .advent-announce-text::after,
+  .ai_06_2025 .advent-announce.it .advent-announce-text::after,
+  .ai_06_2025 .advent-announce.pt .advent-announce-text::after,
+  .ai_06_2025 .advent-announce.pt-BR .advent-announce-text::after,
+  .ai_06_2025 .advent-announce.ru .advent-announce-text::after {
+    right: -4px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .ai_06_2025 .advent-announce.de .advent-announce-text,
+  .ai_06_2025 .advent-announce.fr .advent-announce-text {
+    padding-right: 28px !important;
+  }
+
+  .ai_06_2025 .advent-announce.de .advent-announce-text::before,
+  .ai_06_2025 .advent-announce.fr .advent-announce-text::before {
+    display: none;
+  }
+
+  .ai_06_2025 .advent-announce.de .advent-announce-text::after,
+  .ai_06_2025 .advent-announce.fr .advent-announce-text::after {
+    right: -4px;
+  }
+}
+
+@media screen and (max-width: 592px) {
+  .ai_06_2025 .advent-announce-text::before {
+    display: none;
+  }
+  
+  .ai_06_2025 .advent-announce-text {
+    padding-right: 28px !important;
+  }
+
+  .ai_06_2025 .advent-announce-text::after {
+    right: -4px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .ai_06_2025 .advent-announce.ru .advent-announce-text {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .ai_06_2025 .advent-announce.fr .advent-announce-text {
+    font-size: 13px;
+  }
+
+  .ai_06_2025 .advent-announce.ru .advent-announce-text {
+    max-width: 330px;
+    padding: 12px 24px 12px 0px !important;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .ai_06_2025 .advent-announce.de .advent-announce-text,
+  .ai_06_2025 .advent-announce.es .advent-announce-text,
+  .ai_06_2025 .advent-announce.it .advent-announce-text {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 424px) {
+  .ai_06_2025 .advent-announce.es .advent-announce-text,
+  .ai_06_2025 .advent-announce.fr .advent-announce-text {
+    max-width: 256px;
+    padding: 12px 24px 12px 0px !important;
+  }
+
+  .ai_06_2025 .advent-announce.de .advent-announce-text {
+    max-width: 262px;
+    padding: 12px 24px 12px 0px !important;
+  }
+
+  .ai_06_2025 .advent-announce.pt .advent-announce-text,
+  .ai_06_2025 .advent-announce.pt-BR .advent-announce-text {
+    font-size: 13px;
+  }
+
+  .ai_06_2025 .advent-announce.ru .advent-announce-text {
+    max-width: 248px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .ai_06_2025 .advent-announce.pt .advent-announce-text,
+  .ai_06_2025 .advent-announce.pt-BR .advent-announce-text {
+    max-width: 246px;
+    padding: 12px 24px 12px 0px !important;
+  }
+  
+  .ai_06_2025 .advent-announce.it .advent-announce-text {
+    max-width: 260px;
+    padding: 12px 24px 12px 0px !important;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .ai_06_2025 .advent-announce-text {
+    font-size: 13px;
+  }
+
+  .ai_06_2025 .advent-announce.ja .advent-announce-text,
+  .ai_06_2025 .advent-announce.ja-JP .advent-announce-text,
+  .ai_06_2025 .advent-announce.zh .advent-announce-text,
+  .ai_06_2025 .advent-announce.zh-CN .advent-announce-text {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 339px) {
+  .ai_06_2025 .advent-announce-text {
+    font-size: 13px;
+    max-width: 264px;
+    padding: 12px 24px 12px 0px !important;
+  }
+
+  .ai_06_2025 .advent-announce.ja .advent-announce-text,
+  .ai_06_2025 .advent-announce.ja-JP .advent-announce-text,
+  .ai_06_2025 .advent-announce.zh .advent-announce-text,
+  .ai_06_2025 .advent-announce.zh-CN .advent-announce-text {
+    padding: 21px 24px 21px 0px !important;
+  }
+}
