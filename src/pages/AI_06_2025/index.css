@@ -76,6 +76,11 @@
   max-width: 748px;
 }
 
+.ai_06_2025 .advent-announce.sr-Latn-RS .advent-announce-text,
+.ai_06_2025 .advent-announce.sr-Cyrl-RS .advent-announce-text {
+  max-width: 619px;
+}
+
 .ai_06_2025 .advent-announce-text::before,
 .ai_06_2025 .advent-announce-text::after {
   background-image: url(./images/ai-06-2025-icon.svg);
@@ -308,6 +313,8 @@
 
   .ai_06_2025 .advent-announce.ja .advent-announce-text,
   .ai_06_2025 .advent-announce.ja-JP .advent-announce-text,
+  .ai_06_2025 .advent-announce.sr-Latn-RS .advent-announce-text,
+  .ai_06_2025 .advent-announce.sr-Cyrl-RS .advent-announce-text,
   .ai_06_2025 .advent-announce.zh .advent-announce-text,
   .ai_06_2025 .advent-announce.zh-CN .advent-announce-text {
     padding: 21px 24px 21px 0px !important;
