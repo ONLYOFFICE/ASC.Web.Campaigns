@@ -125,6 +125,16 @@
     "iconName": "sl.svg"
   },
   {
+    "key": "sr-Cyrl-RS",
+    "shortKey": "sr-Cyrl-RS",
+    "iconName": "sr.svg"
+  },
+  {
+    "key": "sr-Latn-RS",
+    "shortKey": "sr-Latn-RS",
+    "iconName": "sr.svg"
+  },
+  {
     "key": "es-ES",
     "shortKey": "es",
     "iconName": "es.svg"
