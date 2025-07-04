@@ -57,7 +57,7 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
-  "packageManager": "yarn@4.1.1",
+  "packageManager": "yarn@4.9.2",
   "engines": {
     "node": ">=20",
     "yarn": ">=4"
