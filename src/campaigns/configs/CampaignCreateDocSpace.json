@@ -10,12 +10,12 @@
     "fontWeight": "600"
   },
   "action": {
-    "isButton": true,
+    "isButton": false,
     "color": "#fff",
     "backgroundColor": "#388BDE",
     "fontSize": "12px",
     "fontWeight": "700",
     "type": "open-url"
   },
-  "hideFor": ["owner", "admin"]
+  "hideFor": ["owner", "3"]
 }
