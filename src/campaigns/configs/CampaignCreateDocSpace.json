@@ -11,11 +11,10 @@
   },
   "action": {
     "isButton": false,
-    "color": "#fff",
-    "backgroundColor": "#388BDE",
+    "color": "#388BDE",
     "fontSize": "12px",
     "fontWeight": "700",
     "type": "open-url"
   },
-  "hideFor": ["owner", "3"]
+  "hideFor": ["owner", 3]
 }

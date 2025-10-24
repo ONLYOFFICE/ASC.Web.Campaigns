@@ -16,5 +16,5 @@
     "fontWeight": "600",
     "type": "select-form"
   },
-  "hideFor": ["2", "4"]
+  "hideFor": [2, 4]
 }
