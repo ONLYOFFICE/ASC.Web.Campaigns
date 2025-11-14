@@ -71,3 +71,4 @@ public/
 .DS_Store
 # Gatsby cache
 .cache/
+.yarn/install-state.gz
