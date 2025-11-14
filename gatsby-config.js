@@ -45,6 +45,5 @@ module.exports = {
         fonts: ["Open Sans:400,600,700"],
       },
     },
-    "gatsby-plugin-no-javascript",
   ],
 };
