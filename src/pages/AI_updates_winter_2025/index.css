@@ -1,0 +1,235 @@
+.ai_updates_winter_2025_released div {
+  font-family: "Open Sans", sans-serif, Arial;
+  text-align: center;
+}
+
+.ai_updates_winter_2025_released .advent-announce {
+  background-color: #15699C;
+  background-image: url(./images/ai-2025-bg.svg);
+  background-position-x: 60%;
+  background-size: auto 89px;
+  background-repeat: no-repeat;
+  height: 60px;
+  left: 0;
+  top: 0;
+  padding: 0;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  z-index: 1001;
+}
+
+.ai_updates_winter_2025_released .advent-announce a {
+  display: block;
+  text-decoration: none;
+  width: auto;
+  animation-duration: 0.5s;
+  position: absolute;
+  width: 100%;
+}
+
+.ai_updates_winter_2025_released .advent-announce-text {
+  color: #FFFFFF;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  line-height: 20px;
+  margin: 0 auto;
+  max-width: 740px;
+  padding: 10px 0px;
+  position: relative;
+  text-align: center;
+  text-decoration: none !important;
+  z-index: 0;
+}
+
+.ai_updates_winter_2025_released .advent-announce.de .advent-announce-text,
+.ai_updates_winter_2025_released .advent-announce.fr .advent-announce-text {
+    max-width: 800px;
+}
+
+.ai_updates_winter_2025_released .advent-announce.it .advent-announce-text {
+  max-width: 682px;
+}
+
+.ai_updates_winter_2025_released .advent-announce.ja .advent-announce-text,
+.ai_updates_winter_2025_released .advent-announce.ja-JP .advent-announce-text {
+    max-width: 946px;
+}
+
+.ai_updates_winter_2025_released .advent-announce.es .advent-announce-text {
+    max-width: 778px;
+}
+
+.ai_updates_winter_2025_released .advent-announce.ru .advent-announce-text {
+    max-width: 822px;
+}
+
+.ai_updates_winter_2025_released .advent-announce.sr-Cyrl-RS .advent-announce-text,
+.ai_updates_winter_2025_released .advent-announce.sr-Latn-RS .advent-announce-text {
+    max-width: 784px;
+}
+
+.ai_updates_winter_2025_released .advent-announce.zh .advent-announce-text,
+.ai_updates_winter_2025_released .advent-announce.zh-CN .advent-announce-text {
+  max-width: 710px;
+}
+
+.ai_updates_winter_2025_released .advent-announce-text:before,
+.ai_updates_winter_2025_released .advent-announce-text:after {
+  background-image: url(./images/ai-2025-icons.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 96px auto;
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+}
+
+.ai_updates_winter_2025_released .advent-announce-text:after {
+  background-position: right;
+  height: 24px;
+  right: -36px;
+  top: 19px;
+  width: 24px;
+}
+
+.ai_updates_winter_2025_released .advent-announce-text:before {
+  background-position-x: -12px;
+  height: 44px;
+  left: -63px;
+  top: 8px;
+  width: 52px;
+}
+
+.ai_updates_winter_2025_released .advent-announce-text strong {
+  font-weight: 700;
+}
+
+.advent-desktop-hide {
+  display: none;
+}
+
+@media screen and (max-width: 1120px) {
+  .ai_updates_winter_2025_released .advent-announce.ja .advent-announce-text,
+  .ai_updates_winter_2025_released .advent-announce.ja-JP .advent-announce-text {
+    max-width: 834px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .ai_updates_winter_2025_released .advent-announce {
+    background-position-X: 42%;
+  }
+}
+
+@media screen and (max-width: 959px) {
+  .ai_updates_winter_2025_released .advent-announce {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-position-x: 90%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .ai_updates_winter_2025_released .advent-announce-text {
+    font-size: 14px;
+    font-weight: 700;
+    height: auto;
+    line-height: 18px;
+    padding: 21px 0px !important;
+    white-space: normal;
+    width: auto !important;
+  }
+
+  .ai_updates_winter_2025_released .advent-announce-text:before {
+    display: none;
+  }
+
+  .ai_updates_winter_2025_released .advent-announce-text:after {
+    right: -33px;
+    top: 18px;
+  }
+
+  .ai_updates_winter_2025_released .advent-mobile-hide {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .ai_updates_winter_2025_released .advent-announce {
+    background-position-x: 50%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .ai_updates_winter_2025_released .advent-announce {
+    background-image: url(./images/ai-2025-bg-mob.svg);
+    background-position-x: 90px;
+  }
+
+  .ai_updates_winter_2025_released .advent-announce::before {
+    background-image: url(./images/ai-2025-icon-mob.svg);
+    background-position: 0 -40px;
+    content: '';
+    display: block;
+    height: 60px;
+    left: -200px;
+    position: absolute;
+    width: 595px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .ai_updates_winter_2025_released .advent-announce.ru .advent-announce-text {
+    line-height: 19px;
+    max-width: 206px;
+    padding: 11px 31px 11px 0 !important;
+  }
+
+  .ai_updates_winter_2025_released .advent-announce.ru .advent-announce-text:after {
+    right: -2px;
+  }
+}
+
+@media screen and (max-width: 459px) {
+  .ai_updates_winter_2025_released .advent-announce-text {
+    padding-right: 31px !important;
+    padding-left: 0 !important;
+  }
+
+  .ai_updates_winter_2025_released .advent-announce-text:after {
+    right: -2px;
+  }
+}
+
+@media screen and (max-width: 359px) {
+  .ai_updates_winter_2025_released .advent-announce.de .advent-announce-text,
+  .ai_updates_winter_2025_released .advent-announce.es .advent-announce-text,
+  .ai_updates_winter_2025_released .advent-announce.fr .advent-announce-text,
+  .ai_updates_winter_2025_released .advent-announce.it .advent-announce-text,
+  .ai_updates_winter_2025_released .advent-announce.ru .advent-announce-text,
+  .ai_updates_winter_2025_released .advent-announce.pt .advent-announce-text,
+  .ai_updates_winter_2025_released .advent-announce.pt-BR .advent-announce-text {
+    line-height: 19px;
+    max-width: 206px;
+    padding-bottom: 11px !important;
+    padding-top: 11px !important;
+  }
+
+  .ai_updates_winter_2025_released .advent-announce.es .advent-announce-text {
+    max-width: 154px;
+  }
+
+  .ai_updates_winter_2025_released .advent-announce.it .advent-announce-text {
+    max-width: 228px;
+  }
+
+  .ai_updates_winter_2025_released .advent-announce.pt .advent-announce-text,
+  .ai_updates_winter_2025_released .advent-announce.pt-BR .advent-announce-text {
+    max-width: 144px;
+  }
+}
