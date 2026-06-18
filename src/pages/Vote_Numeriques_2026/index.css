@@ -1,0 +1,162 @@
+.vote_numeriques_2026 div {
+  font-family: "Open Sans", sans-serif, Arial;
+  text-align: center;
+}
+
+.vote_numeriques_2026 .advent-announce {
+  height: 56px;
+  left: 0;
+  top: 0;
+  padding: 0;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  z-index: 1001;
+}
+
+.vote_numeriques_2026 .advent-announce a {
+  background-color: #000122;
+  background-image: url(./images/vote_bg.svg);
+  background-position-x: center;
+  height: 56px;
+  display: block;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+}
+
+.vote_numeriques_2026 .advent-announce-text {
+  align-items: center;
+  color: #fff;
+  display: flex;
+  font-size: 14px;
+  height: 100%;
+  justify-content: center;
+  line-height: 20px;
+  margin: 0 auto;
+  max-width: 914px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  z-index: 10;
+}
+
+.vote_numeriques_2026 .advent-announce.ar-SA .advent-announce-text {
+  direction: ltr;
+  unicode-bidi: normal;
+}
+
+.vote_numeriques_2026 .advent-announce.de .advent-announce-text {
+  max-width: 1054px;
+}
+
+.vote_numeriques_2026 .advent-announce.es .advent-announce-text {
+  max-width: 932px;
+}
+
+.vote_numeriques_2026 .advent-announce.pt .advent-announce-text,
+.vote_numeriques_2026 .advent-announce.pt-BR .advent-announce-text {
+  max-width: 942px;
+}
+
+.vote_numeriques_2026 .advent-announce.ru .advent-announce-text {
+  max-width: 1034px;
+}
+
+.vote_numeriques_2026 .advent-announce.sr-Cyrl-RS .advent-announce-text,
+.vote_numeriques_2026 .advent-announce.sr-Latn-RS .advent-announce-text {
+  max-width: 972px;
+}
+
+.vote_numeriques_2026 .advent-announce-text:before,
+.vote_numeriques_2026 .advent-announce-text:after {
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: "";
+}
+
+.vote_numeriques_2026 .advent-announce-text:before {
+  background-image: url(./images/vote_icon.svg);
+  height: 50px;
+  margin-right: 24px;
+  min-width: 68px;
+  width: 134px;
+}
+
+.vote_numeriques_2026 .advent-announce-text:after {
+  background-image: url(./images/arrow_right.svg);
+  height: 24px;
+  margin: 0 122px 0 12px;
+  min-width: 24px;
+  width: 24px;
+}
+
+.vote_numeriques_2026 .advent-announce-text strong {
+  font-weight: 700;
+}
+
+.advent-desktop-hide {
+  display: none;
+}
+
+@media screen and (max-width: 1119px) {
+  .vote_numeriques_2026 .advent-announce.de .advent-announce-text {
+    max-width: 912px;
+  }
+}
+
+@media screen and (max-width: 1079px) {
+  .vote_numeriques_2026 .advent-announce.ru .advent-announce-text {
+    max-width: 916px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .vote_numeriques_2026 .advent-announce {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 48px;
+  }
+
+  .vote_numeriques_2026 .advent-announce a {
+    background-repeat: no-repeat;
+    height: 48px;
+  }
+
+  .vote_numeriques_2026 .advent-announce-text {
+    font-size: 14px;
+    font-weight: 700;
+    height: auto;
+    line-height: 18px;
+    padding: 12px 0px !important;
+    white-space: normal;
+    width: auto !important;
+  }
+
+  .vote_numeriques_2026 .advent-announce-text:before {
+    display: none;
+  }
+
+  .vote_numeriques_2026 .advent-announce-text:after {
+    margin: 0 0 0 2px;
+  }
+
+  .vote_numeriques_2026 .advent-announce-text strong {
+    padding: 0 4px;
+  }
+
+  .vote_numeriques_2026 .advent-mobile-hide {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .vote_numeriques_2026 .advent-announce a {
+    background-image: url(./images/vote_bg_mobile.svg);
+    background-position: calc(50% + 12px) -152px;
+  }
+}
