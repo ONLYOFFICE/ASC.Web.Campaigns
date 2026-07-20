@@ -4,7 +4,7 @@
 }
 
 .vote_numeriques_2026 .advent-announce {
-  height: 56px;
+  height: 60px;
   left: 0;
   top: 0;
   padding: 0;
@@ -18,7 +18,7 @@
   background-color: #000122;
   background-image: url(./images/vote_bg.svg);
   background-position-x: center;
-  height: 56px;
+  height: 60px;
   display: block;
   overflow: hidden;
   position: relative;
@@ -119,12 +119,10 @@
     align-items: center;
     display: flex;
     justify-content: center;
-    height: 48px;
   }
 
   .vote_numeriques_2026 .advent-announce a {
     background-repeat: no-repeat;
-    height: 48px;
   }
 
   .vote_numeriques_2026 .advent-announce-text {
@@ -132,7 +130,7 @@
     font-weight: 700;
     height: auto;
     line-height: 18px;
-    padding: 12px 0px !important;
+    padding: 18px 0px !important;
     white-space: normal;
     width: auto !important;
   }
