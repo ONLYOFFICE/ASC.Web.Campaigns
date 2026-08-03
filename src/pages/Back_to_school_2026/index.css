@@ -1,0 +1,112 @@
+.back_to_school_2026 div {
+  font-family: "Sora", sans-serif, Arial;
+  text-align: center;
+}
+
+.back_to_school_2026 .advent-announce.ru div {
+  font-family: "Inter", sans-serif, Arial;
+}
+
+.back_to_school_2026 .advent-announce {
+  background-color: #4F9DC8;
+  height: 60px;
+  left: 0;
+  top: 0;
+  padding: 0;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  z-index: 1001;
+}
+
+.back_to_school_2026 .advent-announce a {
+  display: block;
+  text-decoration: none;
+  width: auto;
+  animation-duration: 0.5s;
+  position: absolute;
+  width: 100%;
+}
+
+.back_to_school_2026 .advent-announce-text {
+  color: #FFFFFF;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0 auto;
+  padding: 19px 0px 21px;
+  position: relative;
+  text-align: center;
+  text-decoration: none !important;
+  z-index: 0;
+  max-width: 850px;
+}
+
+.back_to_school_2026 .advent-announce-text:before,
+.back_to_school_2026 .advent-announce-text:after {
+  background-repeat: no-repeat;
+  content: "";
+  display: block;
+  top: 0px;
+  position: absolute;
+  z-index: -1;
+}
+
+.back_to_school_2026 .advent-announce-text:after {
+  background-image: url(./images/bts-2026-desk-right.svg);
+  background-position-y: -12px;
+  height: 60px;
+  right: -378px;
+  width: 513px;
+}
+
+.back_to_school_2026 .advent-announce-text:before {
+  background-image: url(./images/bts-2026-desk-left.svg);
+  height: 60px;
+  left: -297px;
+  width: 495px;
+}
+
+.back_to_school_2026 .advent-announce-text b {
+  font-weight: 600;
+}
+
+.advent-desktop-hide {
+  display: none;
+}
+
+@media screen and (max-width: 1023px) {
+  .back_to_school_2026 .advent-announce {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .back_to_school_2026 .advent-announce-text {
+    display: inline-block;
+    font-weight: 600;
+    height: auto;
+    line-height: 18px;
+    padding: 21px 0px;
+    white-space: normal;
+    width: auto !important;
+  }
+
+  .back_to_school_2026 .advent-announce-text:after {
+    right: -58px;
+    top: 0;
+    width: 79px;
+  }
+
+  .back_to_school_2026 .advent-announce-text:before {
+    background-image: url(./images/bts-2026-mob.svg);
+    background-position-y: 5px;
+    left: -89px;
+    width: 363px;
+  }
+
+  .back_to_school_2026 .advent-mobile-hide {
+    display: none;
+  }
+}
