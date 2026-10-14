@@ -29,7 +29,7 @@
   width: 100%;
 }
 
-.docs_10_0_released.theme-light .advent-announce a {
+.theme-light .docs_10_0_released .advent-announce a {
   background-color: #ffffff;
 }
 
@@ -49,7 +49,7 @@
   z-index: 10;
 }
 
-.docs_10_0_released.theme-light .advent-announce-text {
+.theme-light .docs_10_0_released .advent-announce-text {
   color: #585a6d;
 }
 
@@ -105,7 +105,7 @@
   width: 24px;
 }
 
-.docs_10_0_released.theme-light .advent-announce-text > div:after {
+.theme-light .docs_10_0_released .advent-announce-text > div:after {
   background-color: #7a7d94;
 }
 
@@ -128,7 +128,7 @@
   white-space: nowrap;
 }
 
-.docs_10_0_released.theme-light .advent-announce-text span {
+.theme-light .docs_10_0_released .advent-announce-text span {
   background-color: #e7dcfd;
   color: #21222b;
 }
