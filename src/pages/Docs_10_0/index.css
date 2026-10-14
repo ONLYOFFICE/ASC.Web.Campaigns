@@ -20,8 +20,6 @@
 
 .docs_10_0_released .advent-announce a {
   background-color: #ffffff;
-  border-bottom: 1px solid #ccdbfb;
-  box-sizing: border-box;
   height: 60px;
   display: block;
   overflow: hidden;
@@ -33,7 +31,6 @@
 
 .docs_10_0_released.theme-dark .advent-announce a {
   background-color: #000122;
-  border-bottom-color: #30305e;
 }
 
 .docs_10_0_released .advent-announce-text {
@@ -145,10 +142,6 @@
     align-items: center;
     display: flex;
     justify-content: center;
-  }
-
-  .docs_10_0_released .advent-announce a {
-    border-bottom: none;
   }
 
   .docs_10_0_released .advent-announce-text {
