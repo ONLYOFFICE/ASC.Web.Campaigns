@@ -19,7 +19,7 @@
 }
 
 .docs_10_0_released .advent-announce a {
-  background-color: #ffffff;
+  background-color: #000122;
   height: 60px;
   display: block;
   overflow: hidden;
@@ -29,13 +29,13 @@
   width: 100%;
 }
 
-.docs_10_0_released.theme-dark .advent-announce a {
-  background-color: #000122;
+.docs_10_0_released.theme-light .advent-announce a {
+  background-color: #ffffff;
 }
 
 .docs_10_0_released .advent-announce-text {
   align-items: center;
-  color: #585a6d;
+  color: #e7e8ee;
   display: flex;
   font-size: 14px;
   height: 100%;
@@ -49,8 +49,8 @@
   z-index: 10;
 }
 
-.docs_10_0_released.theme-dark .advent-announce-text {
-  color: #e7e8ee;
+.docs_10_0_released.theme-light .advent-announce-text {
+  color: #585a6d;
 }
 
 /* Per-language widths make the desktop text wrap after a comma */
@@ -88,7 +88,7 @@
 }
 
 .docs_10_0_released .advent-announce-text > div:after {
-  background-color: #7a7d94;
+  background-color: #bcbeca;
   content: "";
   display: inline-block;
   height: 24px;
@@ -105,8 +105,8 @@
   width: 24px;
 }
 
-.docs_10_0_released.theme-dark .advent-announce-text > div:after {
-  background-color: #bcbeca;
+.docs_10_0_released.theme-light .advent-announce-text > div:after {
+  background-color: #7a7d94;
 }
 
 .docs_10_0_released .advent-announce.ar-SA .advent-announce-text {
@@ -118,19 +118,19 @@
 }
 
 .docs_10_0_released .advent-announce-text span {
-  background-color: #e7dcfd;
+  background-color: rgba(117, 114, 222, 0.4);
   border-radius: 16px;
   box-shadow: 0px 0px 4px 0px #7474ff33 inset;
-  color: #21222b;
+  color: #e7e8ee;
   font-weight: 600;
   margin-inline-end: 4px;
   padding: 5px 8px;
   white-space: nowrap;
 }
 
-.docs_10_0_released.theme-dark .advent-announce-text span {
-  background-color: rgba(117, 114, 222, 0.4);
-  color: #e7e8ee;
+.docs_10_0_released.theme-light .advent-announce-text span {
+  background-color: #e7dcfd;
+  color: #21222b;
 }
 
 .advent-desktop-hide {

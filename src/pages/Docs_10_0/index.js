@@ -10,17 +10,18 @@ const IndexPage = () => {
     i18n: { language },
   } = useTranslation("Docs_10_0");
 
-  const [theme, setTheme] = React.useState("light");
+  // Dark is the default; ?theme=light switches to the light variant
+  const [theme, setTheme] = React.useState("dark");
 
   React.useEffect(() => {
     const params = new URLSearchParams(window.location.search);
-    if (params.get("theme") === "dark") setTheme("dark");
+    if (params.get("theme") === "light") setTheme("light");
   }, []);
 
   const LinkHrefDocs_10_0 = t("Banner_Docs_10_0_Link");
 
   return (
-    <div className={"docs_10_0_released" + (theme === "dark" ? " theme-dark" : "")}>
+    <div className={"docs_10_0_released" + (theme === "light" ? " theme-light" : "")}>
       <div className={"advent-announce advent-mobile-hide " + language}>
         <a
           target="_blank"
