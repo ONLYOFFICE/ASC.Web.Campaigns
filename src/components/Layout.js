@@ -34,7 +34,7 @@ export const Layout = ({ theme, name, origin, language, campaignName }) => {
   // }, [lang]);
 
   // const [language, setLanguage] = useState(lang || "en");
-  const url = `${origin}/${language}/${name}`;
+  const url = `${origin}/${language}/${name}?theme=${theme || "light"}`;
 
   return (
     <ThemeProvider theme={themes[theme || "light"]}>
